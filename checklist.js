@@ -50,7 +50,7 @@ document.querySelector('#copy').onclick = async () => {
 };
 document.querySelector('#submit').onclick = () => {
     const url = new URL('https://github.com/Irontaxi/sea-of-steel-qa/issues/new');
-    url.searchParams.set('title', 'QA results · Steam build ' + build.dataset.build);
+    url.searchParams.set('title', build.dataset.reportTitle || ('QA results · Steam build ' + build.dataset.build));
     const text = report();
     url.searchParams.set('body', text);
     if (url.href.length > 7500) {

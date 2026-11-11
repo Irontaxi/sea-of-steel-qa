@@ -1,6 +1,8 @@
 # Sea of Steel QA
 
-The site root opens the latest Steam testing checklist. The archive lists every published build.
+The site root opens the current testing checklist, clearly labelled Steam or local development. The archive lists every published build.
+
+Local development checklists live under `local/` and use a dated binary-hash identity, separate from Steam build IDs even when the displayed game version is unchanged. Set `data-report-title` on the build paragraph for local GitHub submission titles. Retain local archive links when publishing a later Steam checklist; `add_checklist.py` preserves these links. Each build has independent saved marks and notes.
 
 Mark each item, add notes, and choose **Submit to GitHub**. This opens a prefilled public issue. Edit that issue after a retest of the same build. Use the [submissions list](https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+%22QA+results%22+sort%3Aupdated-desc) to find the most recently updated reports for QA.
 

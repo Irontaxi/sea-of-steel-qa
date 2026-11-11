@@ -44,6 +44,9 @@ target.write_text(page, encoding="utf-8")
 entries = sorted((root / "builds").glob("*.html"), key=lambda p: int(p.stem), reverse=True)
 latest = entries[0].stem
 links = []
+archive_path = root / "archive.html"
+if archive_path.exists():
+    links.extend(re.findall(r'<li><a href="local/[^"<>]+">[^<]+</a></li>', archive_path.read_text(encoding="utf-8")))
 for entry in entries:
     label = re.search(r'<p id="build"[^>]*>([^<]+)</p>', entry.read_text(encoding="utf-8"))[1]
     links.append(f'<li><a href="builds/{entry.name}">{escape(label)}</a></li>')
