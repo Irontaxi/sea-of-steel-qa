@@ -13,7 +13,7 @@ This page describes bot behavior in campaign sectors and single-sector Scenarios
 
 ## Sector reinforcement budget
 
-The bot starts each deployment with **500 resources**. Every **30 simulation seconds**, each surviving enemy-held airfield earns **35 resources**, up to a shared balance of **1,800**. Capturing or destroying those airfields cuts off their income. The bot can still spend what it has left.
+The bot starts each deployment with **500 resources**. Every **30 simulation seconds**, each operational enemy-held airfield earns **35 resources**, up to a shared balance of **1,800**. Capturing an airfield cuts off its contribution. Neutralizing the runway suspends income until infantry rebuild it past 20% condition. The bot can still spend what it has left.
 
 | Purchase | Cost | Deployment rule |
 | --- | ---: | --- |
@@ -23,9 +23,9 @@ The bot starts each deployment with **500 resources**. Every **30 simulation sec
 | Light expedition | 300–600 | **2–3 frigates or destroyers**. One paid expedition active at a time. |
 | Surface hunter group | 1,100–1,700 | **1 cruiser or battlecruiser and 3–4 light escorts**. One paid hunter group active at a time. A current observation of a valuable enemy ship can trigger the purchase. |
 
-Recapture and frontline airfield supply can take priority over saving for a hunter group. Purchases debit resources when the force actually dispatches. A blocked arrival can retry without charging the budget. Paid forces do not add targets to the sector’s victory objective.
+Recapture and frontline airfield supply can take priority over saving for a hunter group. Purchases debit resources when the force actually dispatches. Naval and air reinforcements enter outside current player observation and away from nearby player units. A blocked arrival can retry without charging the budget. Paid forces do not add targets to the sector’s victory objective.
 
-When the bot loses airfield income, it can still receive limited free relief after a prolonged lull. The fallback has a six-minute quiet threshold, a seven-minute cooldown, and a maximum of three successful relief waves per deployment. It uses the same submarine cap.
+Fresh ground forces sent to recapture bases come from paid landing-craft waves. Existing garrisons can still respond locally. Where legacy stalemate relief is enabled, it can send limited naval or fighter waves after a prolonged lull and uses the same submarine cap.
 
 ## What to look for in QA
 
