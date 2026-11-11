@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel QA · 26582466</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+ a {color:#e1c798}
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel QA</h1>
+<p id="build" data-build="26582466">Steam testing 26582466 · Version 2026.11.10.2</p>
+<ul><li data-id="ingress"><span>Q369 · Pick a green entry point. Check camera focus and fleet waves after Resume.</span><button data-result="✓" aria-label="Pass ingress" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail ingress" aria-pressed="false">✕</button></li><li data-id="setup"><span>Q369 · Check the centered Combat Begins countdown. Attacks and recon unlock at 3:00.</span><button data-result="✓" aria-label="Pass setup" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail setup" aria-pressed="false">✕</button></li><li data-id="navigation"><span>Naval movement · Reform a large fleet, pass opposing ships in parallel, and replace a move order while ships are turning.</span><button data-result="✓" aria-label="Pass navigation" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail navigation" aria-pressed="false">✕</button></li><li data-id="following"><span>Naval movement · Check that faster ships hold steady spacing behind slower ships.</span><button data-result="✓" aria-label="Pass following" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail following" aria-pressed="false">✕</button></li><li data-id="fog"><span>Q393 · Zoom in on a coastline with Standard fog. Check the sharper chart and finer reveal boundaries.</span><button data-result="✓" aria-label="Pass fog" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail fog" aria-pressed="false">✕</button></li><li data-id="coopfog"><span>Q393 · In co-op, compare explored areas and fog on host and guest.</span><button data-result="✓" aria-label="Pass coopfog" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coopfog" aria-pressed="false">✕</button></li><li data-id="frigate"><span>Q388 · Fire at a Japanese frigate. Compare confirmed impacts with hull loss. Record the seed if damage stalls. Live reproduction remains open; a native pass is not player approval.</span><button data-result="✓" aria-label="Pass frigate" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail frigate" aria-pressed="false">✕</button></li><li data-id="ai"><span>Q103 · Check enemy recon and strike coordination against a moving fleet.</span><button data-result="✓" aria-label="Pass ai" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail ai" aria-pressed="false">✕</button></li><li data-id="victory"><span>Q358 / Q377 / Q380 · Complete the main objectives with optional ones open. Check the victory summary and Replay → Battle Stats.</span><button data-result="✓" aria-label="Pass victory" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail victory" aria-pressed="false">✕</button></li><li data-id="lab"><span>Q364 · Land infantry and amphibious tanks in the Land Warfare Lab.</span><button data-result="✓" aria-label="Pass lab" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail lab" aria-pressed="false">✕</button></li><li data-id="onboarding"><span>Q373 · With fresh preferences, check that Deploy, CAP and Focus each highlight once.</span><button data-result="✓" aria-label="Pass onboarding" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail onboarding" aria-pressed="false">✕</button></li><li data-id="perf"><span>Performance · Run a busy seed 9 battle. Capture a short trace if it stutters. Keep raw traces and local logs private; report conditions and timing in Notes.</span><button data-result="✓" aria-label="Pass perf" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail perf" aria-pressed="false">✕</button></li></ul>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
+<p>Submissions are public on GitHub. Edit your existing issue to report a retest of this build.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
