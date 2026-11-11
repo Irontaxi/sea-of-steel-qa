@@ -4,6 +4,7 @@ The site root opens the current testing checklist, clearly labelled Steam or loc
 
 ## QA reference
 
+- [Earning resources in a round](references/player-resources.md) lists player objective payouts, reinforcement spending, and what carries into the next sector.
 - [Bot strategy and reinforcements](references/bot-strategy.md) covers enemy behavior, resource costs, arrival rules, and force limits. Update it when those rules change.
 - [Ship stats and damage](references/ship-stats-2026.11.10.2.html) records the unit and weapon values for the named build.
 
