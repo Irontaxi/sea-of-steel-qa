@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel QA · 26620141</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+ a {color:#e1c798}
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+ a {color:#e1c798} a {color:#e1c798}
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel QA</h1>
+<p id="build" data-build="26620141">Steam testing 26620141 · Version 2026.11.12.1</p>
+<p>Perforce CL 3028. The Windows Development package, startup, 1280 × 720 UI check, and 12 native checkpoint, campaign sector, and exit checks passed.</p>
+<ul>
+<li data-id="menu-fleet"><span>Check the refreshed main menu and fleet builder.</span><button data-result="✓" aria-label="Pass: Check the refreshed main menu and fleet builder." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Check the refreshed main menu and fleet builder." aria-pressed="false">✕</button></li>
+<li data-id="tactical-aviation"><span>Deploy and check the tactical command icons. Collapse and reopen Aviation.</span><button data-result="✓" aria-label="Pass: Deploy and check the tactical command icons. Collapse and reopen Aviation." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Deploy and check the tactical command icons. Collapse and reopen Aviation." aria-pressed="false">✕</button></li>
+<li data-id="career-saves"><span>Load a career and open Campaign Operations. Check that Load Saved Battle shows saves for that career.</span><button data-result="✓" aria-label="Pass: Load a career and open Campaign Operations. Check that Load Saved Battle shows saves for that career." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Load a career and open Campaign Operations. Check that Load Saved Battle shows saves for that career." aria-pressed="false">✕</button></li>
+<li data-id="sector-transfer"><span>Win a career sector, choose Continue Playing, and transfer a damaged fleet to an adjacent sector. Check that the same hulls arrive with their damage intact.</span><button data-result="✓" aria-label="Pass: Win a career sector, choose Continue Playing, and transfer a damaged fleet to an adjacent sector. Check that the same hulls arrive with their damage intact." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Win a career sector, choose Continue Playing, and transfer a damaged fleet to an adjacent sector. Check that the same hulls arrive with their damage intact." aria-pressed="false">✕</button></li>
+<li data-id="timed-scenario"><span>Complete a timed scenario with one required objective and an optional objective still open. Confirm the result and Battle Stats.</span><button data-result="✓" aria-label="Pass: Complete a timed scenario with one required objective and an optional objective still open. Confirm the result and Battle Stats." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Complete a timed scenario with one required objective and an optional objective still open. Confirm the result and Battle Stats." aria-pressed="false">✕</button></li>
+<li data-id="ship-impacts"><span>Check that ship impacts show effects and play sound.</span><button data-result="✓" aria-label="Pass: Check that ship impacts show effects and play sound." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Check that ship impacts show effects and play sound." aria-pressed="false">✕</button></li>
+</ul>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
+<p>Submissions are public on GitHub. Edit your existing issue to report a retest of this build.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
