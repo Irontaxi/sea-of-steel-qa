@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel QA · 26606171</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+ a {color:#e1c798}
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+ a {color:#e1c798}
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel QA</h1>
+<p id="build" data-build="26606171">Steam testing 26606171 · Version 2026.11.11.1</p>
+<p>Perforce CL 3027. Package and main-menu startup smoke passed. The checks below are open for player testing.</p>
+<ul>
+<li data-id="timed-scenario"><span>Generate a timed scenario with one required and one optional objective. Check the result and Battle Stats.</span><button data-result="✓" aria-label="Pass: Generate a timed scenario with one required and one optional objective. Check the result and Battle Stats." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Generate a timed scenario with one required and one optional objective. Check the result and Battle Stats." aria-pressed="false">✕</button></li>
+<li data-id="menus"><span>Check Tutorials, Fleet Back, and country selection in Scenario and Career.</span><button data-result="✓" aria-label="Pass: Check Tutorials, Fleet Back, and country selection in Scenario and Career." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Check Tutorials, Fleet Back, and country selection in Scenario and Career." aria-pressed="false">✕</button></li>
+<li data-id="airfield"><span>Disable an airfield, capture it, and repair its runway. Check that it becomes usable.</span><button data-result="✓" aria-label="Pass: Disable an airfield, capture it, and repair its runway. Check that it becomes usable." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Disable an airfield, capture it, and repair its runway. Check that it becomes usable." aria-pressed="false">✕</button></li>
+<li data-id="coop-handoff"><span>Connect a co-op guest, hand off a ship in Command View, and check order ownership.</span><button data-result="✓" aria-label="Pass: Connect a co-op guest, hand off a ship in Command View, and check order ownership." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Connect a co-op guest, hand off a ship in Command View, and check order ownership." aria-pressed="false">✕</button></li>
+<li data-id="enemy-response"><span>Observe enemy resupply and an airfield counterattack.</span><button data-result="✓" aria-label="Pass: Observe enemy resupply and an airfield counterattack." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Observe enemy resupply and an airfield counterattack." aria-pressed="false">✕</button></li>
+<li data-id="fort-turrets"><span>Check that both offshore fort turrets track and fire within one grid cell.</span><button data-result="✓" aria-label="Pass: Check that both offshore fort turrets track and fire within one grid cell." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Check that both offshore fort turrets track and fire within one grid cell." aria-pressed="false">✕</button></li>
+<li data-id="land-warfare"><span>Open Land Warfare Lab through Terrain Preset and land infantry and tanks.</span><button data-result="✓" aria-label="Pass: Open Land Warfare Lab through Terrain Preset and land infantry and tanks." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Open Land Warfare Lab through Terrain Preset and land infantry and tanks." aria-pressed="false">✕</button></li>
+<li data-id="victory"><span>Confirm main objectives sort first and victory opens the summary.</span><button data-result="✓" aria-label="Pass: Confirm main objectives sort first and victory opens the summary." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Confirm main objectives sort first and victory opens the summary." aria-pressed="false">✕</button></li>
+<li data-id="seed-9"><span>Run a busy seed 9 battle and capture a short trace if it stutters. Keep raw traces and logs private.</span><button data-result="✓" aria-label="Pass: Run a busy seed 9 battle and capture a short trace if it stutters. Keep raw traces and logs private." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Run a busy seed 9 battle and capture a short trace if it stutters. Keep raw traces and logs private." aria-pressed="false">✕</button></li>
+<li data-id="load-saved-game"><span>Confirm Load Saved Game opens separate Scenario and Career lists. Mid-battle saving and resume remain in development.</span><button data-result="✓" aria-label="Pass: Confirm Load Saved Game opens separate Scenario and Career lists. Mid-battle saving and resume remain in development." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Confirm Load Saved Game opens separate Scenario and Career lists. Mid-battle saving and resume remain in development." aria-pressed="false">✕</button></li>
+</ul>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
+<p>Submissions are public on GitHub. Edit your existing issue to report a retest of this build.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
