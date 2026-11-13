@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel QA · 26656189</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel QA</h1>
+<p id="build" data-build="26656189">Steam testing 26656189 · Version 2026.11.13.4</p>
+<p>Remote Steam invite co-op still needs player verification. The host Steam lobby and SDR listener were verified. Local direct-IP testing passed the two-player handoff, movement, shared fog, and pings.</p>
+<ul>
+<li data-id="host-listening"><span>Use two distinct Steam accounts on separate networks. Both players should use the testing build. Host a career battle with co-op enabled and confirm the listening indicator in Command View.</span><button data-result="✓" aria-label="Pass: host-listening" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: host-listening" aria-pressed="false">✕</button></li>
+<li data-id="invite-join"><span>Send a Steam invite from the host. On the guest account, accept the invite through the Steam overlay. Confirm the guest sees connection feedback and joins the host’s battle.</span><button data-result="✓" aria-label="Pass: invite-join" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: invite-join" aria-pressed="false">✕</button></li>
+<li data-id="handoff-move"><span>Hand a ship to the guest in Command View. Have the guest issue a move order and confirm the assigned ship follows it on both screens.</span><button data-result="✓" aria-label="Pass: handoff-move" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: handoff-move" aria-pressed="false">✕</button></li>
+<li data-id="shared-fog-ping"><span>Compare revealed areas and fog on both screens. Send a map ping and confirm it appears for the other player.</span><button data-result="✓" aria-label="Pass: shared-fog-ping" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: shared-fog-ping" aria-pressed="false">✕</button></li>
+<li data-id="disconnect"><span>Have the guest disconnect normally. Confirm the host sees the updated connection status and can continue playing.</span><button data-result="✓" aria-label="Pass: disconnect" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: disconnect" aria-pressed="false">✕</button></li>
+</ul>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
+<p>Submissions are public on GitHub. Keep account identifiers, IP addresses, and raw logs private. Edit your existing issue to report a retest of this build.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
