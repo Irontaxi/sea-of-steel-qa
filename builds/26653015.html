@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel QA · 26653015</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel QA</h1>
+<p id="build" data-build="26653015">Steam testing 26653015 · Version 2026.11.13.3</p>
+<p>Package startup and 69 focused checks passed. Remote co-op still needs player verification.</p>
+<ul>
+<li data-id="q404-passage"><span>Q404 · Send a carrier and cruiser at 50 m spread through a wide strait using queued coastal waypoints. Check both ships clear the passage without sustained turning, blocking, or yielding.</span><button data-result="✓" aria-label="Pass: q404-passage" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: q404-passage" aria-pressed="false">✕</button></li>
+<li data-id="q404-edge-pass"><span>Q404 · Give vessels close passing orders near the chart edge. Check both clear each other and stay within navigable water.</span><button data-result="✓" aria-label="Pass: q404-edge-pass" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: q404-edge-pass" aria-pressed="false">✕</button></li>
+<li data-id="command-chart"><span>Open Command View in a career battle. Check the chart is continuous, only the active sector has an outline, and the map has no stamps or text badges.</span><button data-result="✓" aria-label="Pass: command-chart" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: command-chart" aria-pressed="false">✕</button></li>
+<li data-id="tactical-chart"><span>Switch to Tactical View and confirm neighboring sector previews are hidden.</span><button data-result="✓" aria-label="Pass: tactical-chart" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: tactical-chart" aria-pressed="false">✕</button></li>
+<li data-id="fog-reload"><span>Reveal coastline in battle and check the finer fog boundary. Save and reload the battle and verify that previously explored areas are still revealed.</span><button data-result="✓" aria-label="Pass: fog-reload" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: fog-reload" aria-pressed="false">✕</button></li>
+<li data-id="remote-coop"><span>From a different network, have the guest join using the host’s public IPv4 over UDP port 7777. Once connected, hand off a ship in Command View and verify the guest can issue orders to it.</span><button data-result="✓" aria-label="Pass: remote-coop" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: remote-coop" aria-pressed="false">✕</button></li>
+</ul>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
+<p>Submissions are public on GitHub. Keep IP addresses and raw logs private. Edit your existing issue to report a retest of this build.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
