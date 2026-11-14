@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel QA · 26660742</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel QA</h1>
+<p id="build" data-build="26660742">Steam testing 26660742 · Version 2026.11.13.6</p>
+<h2>Q352 co-op checks</h2>
+<p>Local two-player smoke passed. Remote Steam invite testing is pending.</p>
+<ul>
+<li data-id="steam-invite"><span>Both players update to 2026.11.13.6 and use separate Steam accounts. Host a career battle with co-op enabled. Use Invite Steam Friend in Command View and have the guest accept in the Steam overlay. Confirm the guest joins the battle.</span><button data-result="✓" aria-label="Pass: Both players update to 2026.11.13.6 and use separate Steam accounts. Host a career battle with co-op enabled. Use Invite Steam Friend in Command View and have the guest accept in the Steam overlay. Confirm the guest joins the battle." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Both players update to 2026.11.13.6 and use separate Steam accounts. Host a career battle with co-op enabled. Use Invite Steam Friend in Command View and have the guest accept in the Steam overlay. Confirm the guest joins the battle." aria-pressed="false">✕</button></li>
+<li data-id="guest-hud-zoom"><span>Compare the guest’s starting camera, tactical HUD, and zoom with the host’s Tactical View. Select an assigned ship and issue a move order. Check the guest sees selection and route feedback.</span><button data-result="✓" aria-label="Pass: Compare the guest’s starting camera, tactical HUD, and zoom with the host’s Tactical View. Select an assigned ship and issue a move order. Check the guest sees selection and route feedback." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Compare the guest’s starting camera, tactical HUD, and zoom with the host’s Tactical View. Select an assigned ship and issue a move order. Check the guest sees selection and route feedback." aria-pressed="false">✕</button></li>
+<li data-id="host-only-views"><span>Verify the host can use Command View, Reinforcements, Debug, and session controls. Check the guest cannot open or operate those controls.</span><button data-result="✓" aria-label="Pass: Verify the host can use Command View, Reinforcements, Debug, and session controls. Check the guest cannot open or operate those controls." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Verify the host can use Command View, Reinforcements, Debug, and session controls. Check the guest cannot open or operate those controls." aria-pressed="false">✕</button></li>
+<li data-id="carrier-handoff"><span>Launch CAP as host, then hand the carrier to the guest while CAP is airborne. Verify the guest can launch another flight from the carrier and the host cannot issue orders to it while it is assigned.</span><button data-result="✓" aria-label="Pass: Launch CAP as host, then hand the carrier to the guest while CAP is airborne. Verify the guest can launch another flight from the carrier and the host cannot issue orders to it while it is assigned." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Launch CAP as host, then hand the carrier to the guest while CAP is airborne. Verify the guest can launch another flight from the carrier and the host cannot issue orders to it while it is assigned." aria-pressed="false">✕</button></li>
+<li data-id="carrier-reclaim"><span>Reclaim the carrier as host while the original CAP is still airborne. Confirm CAP continues uninterrupted, the host regains command, and the guest can no longer issue orders to the carrier.</span><button data-result="✓" aria-label="Pass: Reclaim the carrier as host while the original CAP is still airborne. Confirm CAP continues uninterrupted, the host regains command, and the guest can no longer issue orders to the carrier." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Reclaim the carrier as host while the original CAP is still airborne. Confirm CAP continues uninterrupted, the host regains command, and the guest can no longer issue orders to the carrier." aria-pressed="false">✕</button></li>
+<li data-id="map-pings"><span>Send a map ping from each player and verify it appears for the other.</span><button data-result="✓" aria-label="Pass: Send a map ping from each player and verify it appears for the other." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Send a map ping from each player and verify it appears for the other." aria-pressed="false">✕</button></li>
+<li data-id="clean-disconnect"><span>Have the guest disconnect normally. Check the host sees the status change and can continue playing.</span><button data-result="✓" aria-label="Pass: Have the guest disconnect normally. Check the host sees the status change and can continue playing." aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail: Have the guest disconnect normally. Check the host sees the status change and can continue playing." aria-pressed="false">✕</button></li>
+</ul>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
+<p>Submissions are public on GitHub. Keep account identifiers, IP addresses, and raw logs private. Edit your existing issue to report a retest of this build.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
