@@ -14,7 +14,7 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 <h1>Sea of Steel QA</h1>
 <p id="build" data-build="26676196">Steam testing 26676196 · Version 2026.11.14.2</p>
 <p>Windows Development packaging, startup, and native sweep and contact regression passed. Use the test field for Q420. Production encounters currently do not seed enemy minefields.</p>
-<p><strong>5 passed · 0 failed · 8 unchecked</strong> on build 26676196.</p>
+<p><strong>5 passed · 0 failed · 9 unchecked</strong> on build 26676196.</p>
 <h2>Remote Steam co-op retests</h2>
 <p>Use two separate Steam accounts on build 26676196. Aircraft visibility and ship motion failed on <a href="26660742.html">build 26660742</a>. Contact cycling, shared fog, pings and clean disconnect still need remote Steam results.</p>
 <ul>
@@ -24,6 +24,10 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 <li data-id="q352-shared-fog"><span>Q352 · Reveal an enemy contact through friendly scouting. Compare both screens and verify the guest receives the shared contact while enemies outside friendly detection stay hidden.</span><button data-result="✓" aria-label="Pass shared fog" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail shared fog" aria-pressed="false">✕</button></li>
 <li data-id="q352-map-pings"><span>Q352 · Send a map ping from the host, then from the guest. Verify each ping appears at the correct location on the other screen.</span><button data-result="✓" aria-label="Pass map pings" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail map pings" aria-pressed="false">✕</button></li>
 <li data-id="q352-clean-disconnect"><span>Q352 · Have the guest leave normally. Verify the host sees the disconnect status and can continue the battle.</span><button data-result="✓" aria-label="Pass clean disconnect" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail clean disconnect" aria-pressed="false">✕</button></li>
+</ul>
+<h2>Mine avoidance</h2>
+<ul>
+<li data-id="q420-known-mine-avoidance"><span>Q420 · In open water, order a friendly ship past a friendly mine on a route that would cross it. Repeat with an enemy mine revealed by Sweep. Verify the ship steers clear of each marked mine, takes no mine damage and continues toward its destination.</span><button data-result="✓" aria-label="Pass known mine avoidance" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail known mine avoidance" aria-pressed="false">✕</button></li>
 </ul>
 <h2>Startup and preview gallery</h2>
 <ul>
