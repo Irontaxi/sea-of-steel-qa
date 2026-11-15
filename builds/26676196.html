@@ -14,12 +14,17 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 <h1>Sea of Steel QA</h1>
 <p id="build" data-build="26676196">Steam testing 26676196 · Version 2026.11.14.2</p>
 <p>Windows Development packaging, startup, and native sweep and contact regression passed. Use the test field for Q420. Production encounters currently do not seed enemy minefields.</p>
-<p><strong>5 passed · 0 failed · 2 unchecked</strong> on build 26676196.</p>
+<p><strong>5 passed · 0 failed · 4 unchecked</strong> on build 26676196.</p>
 <h2>Remote Steam co-op retests</h2>
 <p>These retest the aircraft and motion issues from the <a href="26660742.html">previous co-op checklist</a>.</p>
 <ul>
 <li data-id="q352-guest-aircraft"><span>Q352 · Join remotely over Steam with both players on build 26676196. Launch aircraft from a guest-controlled carrier and check the guest sees aircraft models and flight markers.</span><button data-result="✓" aria-label="Pass q352-guest-aircraft" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-guest-aircraft" aria-pressed="false">✕</button></li>
 <li data-id="q352-guest-motion"><span>Q352 · Compare moving ships on both screens. Verify guest hulls and map markers move smoothly between updates.</span><button data-result="✓" aria-label="Pass q352-guest-motion" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-guest-motion" aria-pressed="false">✕</button></li>
+</ul>
+<h2>Startup and preview gallery</h2>
+<ul>
+<li data-id="startup-audio"><span>Launch through Steam without skipping the intro. Listen for the water plop during the Tiny Leviathan wipe and both cannon reports before the main menu.</span><button data-result="✓" aria-label="Pass startup-audio" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail startup-audio" aria-pressed="false">✕</button></li>
+<li data-id="preview-gallery"><span>Open SEA OF STEEL → Aces over Africa — Preview Library. Check that Tobruk Air Patrol appears first and step through all seven images.</span><button data-result="✓" aria-label="Pass preview-gallery" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail preview-gallery" aria-pressed="false">✕</button></li>
 </ul>
 <details>
 <summary>Minelayer and Minesweeper · 5 passed</summary>
