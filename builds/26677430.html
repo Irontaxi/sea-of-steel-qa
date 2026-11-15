@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel QA · 26677430</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel QA</h1>
+<p id="build" data-build="26677430">Steam testing 26677430 · Version 2026.11.14.3</p>
+<p>Windows Development startup and six focused regressions passed. The player checks below start unmarked for this build. The five completed mine checks are recorded on <a href="26676196.html">build 26676196</a>.</p>
+<ul>
+<li data-id="q401-preview"><span>Q401 · Start a new campaign and prepare Sector 01. Confirm the preview marks clear north and west ingress lanes and leaves the interior borders unmarked.</span><button data-result="✓" aria-label="Pass q401-preview" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q401-preview" aria-pressed="false">✕</button></li>
+<li data-id="q401-deploy"><span>Q401 · Continue to Fleet Builder and press Deploy Fleet. Confirm the picker offers only clear north and west lanes that fit your fleet. Choose an offered lane and verify the fleet enters there.</span><button data-result="✓" aria-label="Pass q401-deploy" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q401-deploy" aria-pressed="false">✕</button></li>
+<li data-id="q403-tutorials"><span>Q403 · Open Tutorials and start Carrier Basics. Follow the on-screen instructions. At a smaller window size, confirm the tutorial card and its navigation buttons fit. Complete Carrier Basics, then use Next Tutorial to reach Ship Handling and Naval Gunnery in order.</span><button data-result="✓" aria-label="Pass q403-tutorials" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-tutorials" aria-pressed="false">✕</button></li>
+<li data-id="q403-progress"><span>Q403 · Complete all three tutorials. Exit and relaunch through Steam, then confirm all three lessons still show completed.</span><button data-result="✓" aria-label="Pass q403-progress" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-progress" aria-pressed="false">✕</button></li>
+<li data-id="q416-wreck-reload"><span>Q416 · Save while a destroyed hull is still sinking and another wreck has already settled. Reload while paused. Check that the descending hull is in its saved pose, the settled hull stays submerged, and both wreck markers remain.</span><button data-result="✓" aria-label="Pass q416-wreck-reload" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q416-wreck-reload" aria-pressed="false">✕</button></li>
+<li data-id="q352-guest-aircraft"><span>Q352 · Join remotely over Steam with both players on this build. Launch aircraft from a guest-controlled carrier and check the guest sees aircraft models and flight markers.</span><button data-result="✓" aria-label="Pass q352-guest-aircraft" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-guest-aircraft" aria-pressed="false">✕</button></li>
+<li data-id="q352-guest-motion"><span>Q352 · Compare moving ships on both screens. Verify guest hulls and map markers move smoothly between updates.</span><button data-result="✓" aria-label="Pass q352-guest-motion" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-guest-motion" aria-pressed="false">✕</button></li>
+<li data-id="q352-guest-contact-cycle"><span>Q352 · With at least two detected contacts, press Tab as guest. Verify contact selection advances and the display identifies the selected contact.</span><button data-result="✓" aria-label="Pass contact cycling" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail contact cycling" aria-pressed="false">✕</button></li>
+<li data-id="q352-shared-fog"><span>Q352 · Reveal an enemy contact through friendly scouting. Compare both screens and verify the guest receives the shared contact while enemies outside friendly detection stay hidden.</span><button data-result="✓" aria-label="Pass shared fog" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail shared fog" aria-pressed="false">✕</button></li>
+<li data-id="q352-map-pings"><span>Q352 · Send a map ping from the host, then from the guest. Verify each ping appears at the correct location on the other screen.</span><button data-result="✓" aria-label="Pass map pings" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail map pings" aria-pressed="false">✕</button></li>
+<li data-id="q352-clean-disconnect"><span>Q352 · Have the guest leave normally. Verify the host sees the disconnect status and can continue the battle.</span><button data-result="✓" aria-label="Pass clean disconnect" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail clean disconnect" aria-pressed="false">✕</button></li>
+<li data-id="q420-known-mine-avoidance"><span>Q420 · In open water, order a friendly ship past a friendly mine on a route that would cross it. Repeat with an enemy mine revealed by Sweep. Verify the ship steers clear of each marked mine, takes no mine damage and continues toward its destination.</span><button data-result="✓" aria-label="Pass known mine avoidance" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail known mine avoidance" aria-pressed="false">✕</button></li>
+<li data-id="startup-audio"><span>Launch through Steam without skipping the intro. Listen for the water plop during the Tiny Leviathan wipe and both cannon reports before the main menu.</span><button data-result="✓" aria-label="Pass startup-audio" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail startup-audio" aria-pressed="false">✕</button></li>
+<li data-id="preview-gallery"><span>Open SEA OF STEEL → Aces over Africa — Preview Library. Check that Tobruk Air Patrol appears first and step through all seven images.</span><button data-result="✓" aria-label="Pass preview-gallery" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail preview-gallery" aria-pressed="false">✕</button></li>
+</ul>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
+<p>Submissions are public on GitHub. Edit your existing issue to report a retest of this build.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
