@@ -14,20 +14,24 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 <h1>Sea of Steel QA</h1>
 <p id="build" data-build="26676196">Steam testing 26676196 · Version 2026.11.14.2</p>
 <p>Windows Development packaging, startup, and native sweep and contact regression passed. Use the test field for Q420. Production encounters currently do not seed enemy minefields.</p>
-<h2>Minelayer and Minesweeper</h2>
-<ul>
-<li data-id="q417-lay"><span>Q417 · Deploy a Minelayer and order it to move. Toggle laying on and off. Verify that laid mines have submerged props and friendly hazard markers, stock falls as mines are placed, and laying turns off when stock reaches zero.</span><button data-result="✓" aria-label="Pass q417-lay" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q417-lay" aria-pressed="false">✕</button></li>
-<li data-id="q420-sweep"><span>Q420 · After setup in Open Ocean, select one Minesweeper and run Sea.Mines.TestField in the in-game console. Enable Sweep under Combat. Verify half speed, an orange contact for the forward mine, and a bobbing mine prop. Confirm the mine abeam stays unmarked.</span><button data-result="✓" aria-label="Pass q420-sweep" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q420-sweep" aria-pressed="false">✕</button></li>
-<li data-id="q420-clear"><span>Engage the swept contact. Verify the depth-charge effect plays and the cleared contact disappears.</span><button data-result="✓" aria-label="Pass q420-clear" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q420-clear" aria-pressed="false">✕</button></li>
-<li data-id="q420-impact"><span>With Sweep off, sail a ship into an unmarked test mine and verify the ship takes damage on contact.</span><button data-result="✓" aria-label="Pass q420-impact" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q420-impact" aria-pressed="false">✕</button></li>
-<li data-id="q420-save"><span>Save and resume with Sweep active and mines placed. Verify both the active Sweep state and the placed mines are restored.</span><button data-result="✓" aria-label="Pass q420-save" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q420-save" aria-pressed="false">✕</button></li>
-</ul>
+<p><strong>5 passed · 0 failed · 2 unchecked</strong> on build 26676196.</p>
 <h2>Remote Steam co-op retests</h2>
 <p>These retest the aircraft and motion issues from the <a href="26660742.html">previous co-op checklist</a>.</p>
 <ul>
 <li data-id="q352-guest-aircraft"><span>Q352 · Join remotely over Steam with both players on build 26676196. Launch aircraft from a guest-controlled carrier and check the guest sees aircraft models and flight markers.</span><button data-result="✓" aria-label="Pass q352-guest-aircraft" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-guest-aircraft" aria-pressed="false">✕</button></li>
 <li data-id="q352-guest-motion"><span>Q352 · Compare moving ships on both screens. Verify guest hulls and map markers move smoothly between updates.</span><button data-result="✓" aria-label="Pass q352-guest-motion" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-guest-motion" aria-pressed="false">✕</button></li>
 </ul>
+<details>
+<summary>Minelayer and Minesweeper · 5 passed</summary>
+<p>Player results for this build are recorded in <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/20">report #20</a>.</p>
+<ul>
+<li>Q417 · Deploy a Minelayer and order it to move. Toggle laying on and off. Verify that laid mines have submerged props and friendly hazard markers, stock falls as mines are placed, and laying turns off when stock reaches zero.</li>
+<li>Q420 · After setup in Open Ocean, select one Minesweeper and run Sea.Mines.TestField in the in-game console. Enable Sweep under Combat. Verify half speed, an orange contact for the forward mine, and a bobbing mine prop. Confirm the mine abeam stays unmarked.</li>
+<li>Engage the swept contact. Verify the depth-charge effect plays and the cleared contact disappears.</li>
+<li>With Sweep off, sail a ship into an unmarked test mine and verify the ship takes damage on contact.</li>
+<li>Save and resume with Sweep active and mines placed. Verify both the active Sweep state and the placed mines are restored.</li>
+</ul>
+</details>
 <label for="notes">Notes for QA</label>
 <textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
 <p>Submissions are public on GitHub. Edit your existing issue to report a retest of this build.</p>
