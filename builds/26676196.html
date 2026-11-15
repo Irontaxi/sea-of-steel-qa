@@ -14,12 +14,16 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 <h1>Sea of Steel QA</h1>
 <p id="build" data-build="26676196">Steam testing 26676196 · Version 2026.11.14.2</p>
 <p>Windows Development packaging, startup, and native sweep and contact regression passed. Use the test field for Q420. Production encounters currently do not seed enemy minefields.</p>
-<p><strong>5 passed · 0 failed · 4 unchecked</strong> on build 26676196.</p>
+<p><strong>5 passed · 0 failed · 8 unchecked</strong> on build 26676196.</p>
 <h2>Remote Steam co-op retests</h2>
-<p>These retest the aircraft and motion issues from the <a href="26660742.html">previous co-op checklist</a>.</p>
+<p>Use two separate Steam accounts on build 26676196. Aircraft visibility and ship motion failed on <a href="26660742.html">build 26660742</a>. Contact cycling, shared fog, pings and clean disconnect still need remote Steam results.</p>
 <ul>
 <li data-id="q352-guest-aircraft"><span>Q352 · Join remotely over Steam with both players on build 26676196. Launch aircraft from a guest-controlled carrier and check the guest sees aircraft models and flight markers.</span><button data-result="✓" aria-label="Pass q352-guest-aircraft" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-guest-aircraft" aria-pressed="false">✕</button></li>
 <li data-id="q352-guest-motion"><span>Q352 · Compare moving ships on both screens. Verify guest hulls and map markers move smoothly between updates.</span><button data-result="✓" aria-label="Pass q352-guest-motion" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-guest-motion" aria-pressed="false">✕</button></li>
+<li data-id="q352-guest-contact-cycle"><span>Q352 · With at least two detected contacts, press Tab as guest. Verify contact selection advances and the display identifies the selected contact.</span><button data-result="✓" aria-label="Pass contact cycling" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail contact cycling" aria-pressed="false">✕</button></li>
+<li data-id="q352-shared-fog"><span>Q352 · Reveal an enemy contact through friendly scouting. Compare both screens and verify the guest receives the shared contact while enemies outside friendly detection stay hidden.</span><button data-result="✓" aria-label="Pass shared fog" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail shared fog" aria-pressed="false">✕</button></li>
+<li data-id="q352-map-pings"><span>Q352 · Send a map ping from the host, then from the guest. Verify each ping appears at the correct location on the other screen.</span><button data-result="✓" aria-label="Pass map pings" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail map pings" aria-pressed="false">✕</button></li>
+<li data-id="q352-clean-disconnect"><span>Q352 · Have the guest leave normally. Verify the host sees the disconnect status and can continue the battle.</span><button data-result="✓" aria-label="Pass clean disconnect" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail clean disconnect" aria-pressed="false">✕</button></li>
 </ul>
 <h2>Startup and preview gallery</h2>
 <ul>
