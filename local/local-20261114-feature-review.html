@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel QA · Local feature review</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel QA</h1>
+<p id="build" data-build="local-20261114-feature-review" data-report-title="QA results · Local feature review · 14 November 2026">Local feature review · 14 November 2026</p>
+<p>Use a local build containing the feature under test. Features may be in different packages. Record the package or revision in Notes. The confirmed Steam results are in the <a href="../builds/26660742.html">Steam checklist</a>.</p>
+<h2>New content and fixes awaiting player review</h2>
+<ul>
+<li data-id="guest-aircraft"><span>Q352 · On matching builds with the presentation fixes, launch aircraft from a guest-controlled carrier. Check aircraft models and flight markers on the guest before and after the host reclaims the carrier.</span><button data-result="✓" aria-label="Pass guest-aircraft" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail guest-aircraft" aria-pressed="false">✕</button></li>
+<li data-id="guest-ship-interpolation"><span>Q352 · Compare moving ships on both screens. Check that guest hulls and map markers move smoothly between updates.</span><button data-result="✓" aria-label="Pass guest-ship-interpolation" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail guest-ship-interpolation" aria-pressed="false">✕</button></li>
+<li data-id="q404-jade-atoll"><span>Q404 · Load Battle of Jade Atoll, seed 697050, and check that the formerly stalled enemy division routes around the island without hulls jumping position. Recheck a coastal convoy and a landing-craft formation at 50 m spread.</span><button data-result="✓" aria-label="Pass q404-jade-atoll" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q404-jade-atoll" aria-pressed="false">✕</button></li>
+<li data-id="q416-wreck-contacts"><span>Q416 · Visually confirm a wreck. Check its ship contact retires and the wreck marker stays. Reload a battle save and verify the same behavior. Keep fleet contacts that still represent unidentified hulls.</span><button data-result="✓" aria-label="Pass q416-wreck-contacts" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q416-wreck-contacts" aria-pressed="false">✕</button></li>
+<li data-id="q407-paratroops"><span>Q407 · Redirect a pending paratrooper drop and check Recall. After release, check Drop at Location disappears. Confirm paratrooper selections show only eligible orders.</span><button data-result="✓" aria-label="Pass q407-paratroops" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q407-paratroops" aria-pressed="false">✕</button></li>
+<li data-id="q406-command-view"><span>Q406 · Open Command View and check the Active AO fits between the side panels. Switch to Campaign Overview, then back to Fit Active AO.</span><button data-result="✓" aria-label="Pass q406-command-view" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q406-command-view" aria-pressed="false">✕</button></li>
+<li data-id="tactical-icons"><span>Check the new Movement and Combat icon grids. Hover for command names and shortcuts, and check that active states and values stay readable.</span><button data-result="✓" aria-label="Pass tactical-icons" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail tactical-icons" aria-pressed="false">✕</button></li>
+<li data-id="q410-bunkers"><span>Q410 · Open Land Warfare Lab and use Debug → Show All Units. Inspect both bunker layouts at the treeline above high tide, including gun placement and spotting distance.</span><button data-result="✓" aria-label="Pass q410-bunkers" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q410-bunkers" aria-pressed="false">✕</button></li>
+<li data-id="q405-swamps"><span>Q405 · Generate terrain with broad flat basins, small flat areas, and steep slopes. Check swamps fit the available flat ground and avoid steep banks.</span><button data-result="✓" aria-label="Pass q405-swamps" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q405-swamps" aria-pressed="false">✕</button></li>
+<li data-id="q402-aviation-counts"><span>Q402 · Switch between two aviation bases. Check ready, queued, airborne, rearming and lost counts, and runway or deck condition update for the selected base.</span><button data-result="✓" aria-label="Pass q402-aviation-counts" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q402-aviation-counts" aria-pressed="false">✕</button></li>
+<li data-id="q400-start-timer"><span>Q400 · Start a battle with the setup countdown. Check that it runs for two simulation minutes and attack and recon orders unlock when it ends.</span><button data-result="✓" aria-label="Pass q400-start-timer" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q400-start-timer" aria-pressed="false">✕</button></li>
+<li data-id="q399-campaign-preview"><span>Q399 · Open the campaign map at normal and narrow window sizes. Check the enlarged overview stays legible and both the sector cells and selected sector preview remain square.</span><button data-result="✓" aria-label="Pass q399-campaign-preview" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q399-campaign-preview" aria-pressed="false">✕</button></li>
+<li data-id="mixed-convoy"><span>In a scenario and a career sector with a scheduled mixed convoy, confirm both the light freighter and standard transport appear. Verify the light freighter contributes half the cargo of the standard transport.</span><button data-result="✓" aria-label="Pass mixed-convoy" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail mixed-convoy" aria-pressed="false">✕</button></li>
+</ul>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the local build or package identifier, seed, and steps."></textarea>
+<p>Submissions are public on GitHub. Keep account identifiers, IP addresses, and raw logs private. Edit your existing issue to report a retest of the same local package.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
