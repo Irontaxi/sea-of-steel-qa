@@ -14,7 +14,7 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 <h1>Sea of Steel QA</h1>
 <p id="build" data-build="26676196">Steam testing 26676196 · Version 2026.11.14.2</p>
 <p>Windows Development packaging, startup, and native sweep and contact regression passed. Use the test field for Q420. Production encounters currently do not seed enemy minefields.</p>
-<p><strong>5 passed · 0 failed · 9 unchecked</strong> on build 26676196.</p>
+<p><strong>7 passed · 0 failed · 7 unchecked</strong> on build 26676196.</p>
 <h2>Remote Steam co-op retests</h2>
 <p>Use two separate Steam accounts on build 26676196. Aircraft visibility and ship motion failed on <a href="26660742.html">build 26660742</a>. Contact cycling, shared fog, pings and clean disconnect still need remote Steam results.</p>
 <ul>
@@ -29,11 +29,14 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 <ul>
 <li data-id="q420-known-mine-avoidance"><span>Q420 · In open water, order a friendly ship past a friendly mine on a route that would cross it. Repeat with an enemy mine revealed by Sweep. Verify the ship steers clear of each marked mine, takes no mine damage and continues toward its destination.</span><button data-result="✓" aria-label="Pass known mine avoidance" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail known mine avoidance" aria-pressed="false">✕</button></li>
 </ul>
-<h2>Startup and preview gallery</h2>
+<details>
+<summary>Startup and preview gallery · 2 passed</summary>
+<p>Player results for this build are recorded in <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/21">report #21</a>.</p>
 <ul>
-<li data-id="startup-audio"><span>Launch through Steam without skipping the intro. Listen for the water plop during the Tiny Leviathan wipe and both cannon reports before the main menu.</span><button data-result="✓" aria-label="Pass startup-audio" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail startup-audio" aria-pressed="false">✕</button></li>
-<li data-id="preview-gallery"><span>Open SEA OF STEEL → Aces over Africa — Preview Library. Check that Tobruk Air Patrol appears first and step through all seven images.</span><button data-result="✓" aria-label="Pass preview-gallery" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail preview-gallery" aria-pressed="false">✕</button></li>
+<li>The water plop during the Tiny Leviathan wipe and both cannon reports played before the main menu.</li>
+<li>The Aces over Africa Preview Library opened with Tobruk Air Patrol first, and all seven images were accessible.</li>
 </ul>
+</details>
 <details>
 <summary>Minelayer and Minesweeper · 5 passed</summary>
 <p>Player results for this build are recorded in <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/20">report #20</a>.</p>
