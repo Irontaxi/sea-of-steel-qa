@@ -42,24 +42,36 @@ button[aria-pressed=true][data-result="✕"] {{background:#873a39}}
 """
 target.write_text(page, encoding="utf-8")
 entries = sorted((root / "builds").glob("*.html"), key=lambda p: int(p.stem), reverse=True)
-latest = entries[0].stem
+labels = {
+    entry: re.search(r'<p id="build"[^>]*>([^<]+)</p>', entry.read_text(encoding="utf-8"))[1]
+    for entry in entries
+}
+latest = next(entry for entry, label in labels.items() if label.startswith("Steam testing "))
+latest_demo = next((entry for entry, label in labels.items() if label.startswith("Steam demo ")), None)
 links = []
 archive_path = root / "archive.html"
 if archive_path.exists():
     links.extend(re.findall(r'<li><a href="local/[^"<>]+">[^<]+</a></li>', archive_path.read_text(encoding="utf-8")))
-for entry in entries:
-    label = re.search(r'<p id="build"[^>]*>([^<]+)</p>', entry.read_text(encoding="utf-8"))[1]
+for entry, label in labels.items():
     links.append(f'<li><a href="builds/{entry.name}">{escape(label)}</a></li>')
+demo_link = (
+    f'<li><a href="builds/{latest_demo.name}">Steam demo · {latest_demo.stem}</a></li>\n'
+    if latest_demo
+    else ""
+)
 (root / "index.html").write_text(f"""<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Sea of Steel QA</title>
-<meta http-equiv="refresh" content="0; url=builds/{latest}.html">
-<p><a href="builds/{latest}.html">Open the latest checklist</a> · <a href="archive.html">Archive</a></p>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sea of Steel QA</title>
+<h1>Sea of Steel QA</h1>
+<ul>
+<li><a href="builds/{latest.name}">Full-game Steam testing · {latest.stem}</a></li>
+{demo_link}</ul>
+<p><a href="archive.html">Archive</a></p>
 </html>
 """, encoding="utf-8")
 (root / "archive.html").write_text(f"""<!doctype html>
 <html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sea of Steel QA archive</title><style>{style[1]} a {{color:#e1c798}}</style>
-<nav><a href="./">Latest checklist</a></nav><h1>QA checklist archive</h1>
+<nav><a href="./">QA home</a></nav><h1>QA checklist archive</h1>
 <ul>{''.join(links)}</ul>
 </html>
 """, encoding="utf-8")

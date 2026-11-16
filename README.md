@@ -1,6 +1,6 @@
 # Sea of Steel QA
 
-The site root opens the current testing checklist, clearly labelled Steam or local development. The archive lists every published build.
+The site root links to the current full-game Steam testing and Steam demo checklists. The archive lists every published build, including local development builds.
 
 ## QA reference
 
