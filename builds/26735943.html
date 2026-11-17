@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel Demo QA · 26735943</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">QA home</a> · <a href="26736405.html">Full-game testing</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel Demo QA</h1>
+<p id="build" data-build="26735943" data-report-title="QA results · Steam demo build 26735943">Steam demo 26735943 · Version 2026.11.17.4351</p>
+<p>Pair this Steam Demo default build with <a href="26736405.html">full-game testing build 26736405</a>. Submit paired EOS results once, from either checklist.</p>
+
+<h2>Q435 · Full game host and demo guest over EOS</h2>
+<p>Record each result separately. If joining fails, record the visible error and mark later checks as blocked in Notes. Keep join codes out of public reports.</p>
+<ul>
+<li data-id="q435-steam-setup"><span>Q435 · Install full-game testing build 26736405 (Steam App 5571150) on the host PC and Demo default build 26735943 (Steam App 5630580) on the guest PC. Use separate Steam accounts. The host owns the full game and the guest owns only the demo. Launch both through Steam, verify the displayed version is 2026.11.17.4351 on both, and check that neither player is asked to sign in to Epic.</span><button data-result="✓" aria-label="Pass q435-steam-setup" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q435-steam-setup" aria-pressed="false">✕</button></li>
+<li data-id="q435-join-code"><span>Q435 · In the full game, open Scenarios, enable co-op and deploy into a battle. Open Command View (Tab), select COPY JOIN CODE / STEAM FRIENDS and send the code in Steam Friends chat. On the demo, open CO-OP, paste the code and select JOIN WITH CODE. Verify both are in the same battle and the host sees the guest connected.</span><button data-result="✓" aria-label="Pass q435-join-code" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q435-join-code" aria-pressed="false">✕</button></li>
+<li data-id="q435-guest-order"><span>Q435 · As host, hand off a ship. As demo guest, select it and order it to move. Verify both screens show the assigned ship carrying out the order.</span><button data-result="✓" aria-label="Pass q435-guest-order" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q435-guest-order" aria-pressed="false">✕</button></li>
+<li data-id="q435-leave-rejoin"><span>Q435 · Use Leave Session on the demo while the host battle is running. Verify the host sees the guest leave and the battle continues. With both games still open, send the current code again and verify the guest rejoins the same battle and can control an assigned ship.</span><button data-result="✓" aria-label="Pass q435-leave-rejoin" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q435-leave-rejoin" aria-pressed="false">✕</button></li>
+</ul>
+<h2>Q403 · Lesson playthroughs</h2>
+<ul>
+<li data-id="q403-demo-find-fleet"><span>Q403 · Find Your Fleet. Pan and zoom while paused, select the marked destroyer, then use Focus Selected. Check the camera centers on the ship and the lesson completes only after the requested actions.</span><button data-result="✓" aria-label="Pass q403-demo-find-fleet" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-find-fleet" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-ship-handling"><span>Q403 · Ship Handling. Resume, order the destroyer to the gold waypoint and wait for arrival. Verify the completion badge appears on arrival.</span><button data-result="✓" aria-label="Pass q403-demo-ship-handling" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-ship-handling" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-control-group"><span>Q403 · Save a Control Group. Select the marked pair, save group 1, click empty water and recall group 1. Verify the same two ships are selected and the lesson completes. Clear selection again and check the group card also recalls the pair.</span><button data-result="✓" aria-label="Pass q403-demo-control-group" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-control-group" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-naval-gunnery"><span>Q403 · Naval Gunnery. Attack inside the gold circle and wait for the salvo to land. Verify the hit completes the lesson.</span><button data-result="✓" aria-label="Pass q403-demo-naval-gunnery" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-naval-gunnery" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-carrier-basics"><span>Q403 · Carrier Basics. Queue CAP from Aviation, wait for the patrol to become airborne, recall it and wait for recovery. Verify lesson completion on recovery and that the final instructions match the After Action buttons.</span><button data-result="✓" aria-label="Pass q403-demo-carrier-basics" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-carrier-basics" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-sweep-mark"><span>Q403 · Sweep and Mark a Mine. Enable Mine Sweeping and sail toward the mark. Verify discovery marks the mine and completes the lesson.</span><button data-result="✓" aria-label="Pass q403-demo-sweep-mark" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-sweep-mark" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-put-troops-ashore"><span>Q403 · Put Troops Ashore. Land the marked craft, then select the released squad. Verify the squad arrives on land and the lesson completes.</span><button data-result="✓" aria-label="Pass q403-demo-put-troops-ashore" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-put-troops-ashore" aria-pressed="false">✕</button></li>
+</ul>
+<h2>Q403 · Navigation and progress</h2>
+<ul>
+<li data-id="q403-demo-panel"><span>Q403 · Open Tutorials on a clean or isolated demo profile and verify seven cards start incomplete. Test 1440 × 900 and 1280 × 720. In a lesson with multiple ships selected, open Movement and look for duplicate Spread controls or a Spread control outside the panel. If it appears, capture a screenshot and note the lesson, resolution, selection and steps.</span><button data-result="✓" aria-label="Pass q403-demo-panel" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-panel" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-back-next"><span>Q403 · Use Back and Next inside a lesson. Verify they move between instruction steps, leave the objective visible and keep completion tied to the required gameplay.</span><button data-result="✓" aria-label="Pass q403-demo-back-next" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-back-next" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-retry"><span>Q403 · Partway through a lesson, choose Retry. Verify the starting setup and instructions reset and no completion badge is awarded.</span><button data-result="✓" aria-label="Pass q403-demo-retry" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-retry" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-next-lesson"><span>Q403 · Complete a lesson and choose Next Tutorial from After Action. Verify the expected next lesson opens at its initial step. Complete another lesson and use Back to Tutorials. Verify the library opens and both completed lessons show badges.</span><button data-result="✓" aria-label="Pass q403-demo-next-lesson" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-next-lesson" aria-pressed="false">✕</button></li>
+<li data-id="q403-demo-restart"><span>Q403 · After completing all seven lessons, quit the demo and relaunch through Steam with the same profile. Verify all seven completed badges persist. Report which badges are missing if any disappear.</span><button data-result="✓" aria-label="Pass q403-demo-restart" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-demo-restart" aria-pressed="false">✕</button></li>
+</ul>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
+<p>Submissions are public on GitHub. Edit your existing issue to report a retest of this build.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
