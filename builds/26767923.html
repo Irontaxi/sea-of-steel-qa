@@ -12,6 +12,7 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 </style>
 <nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
 <h1>Sea of Steel QA</h1>
+<p>Additional user audit passes: Q403, Q408 base host UI, Q425, Q426, Q428, Q432 GROUP GUIDE removal, Q454 and Q458. New mine/charge button, DEST-label and single-selection range follow-ups remain open. EOS connections continue working.</p>
 <p>User audit, 18 November 2026: Q418, Q424, Q427, Q430, Q433, Q434, Q444, Q448, Q453, Q456, Q465 and Q467 are confirmed done. Q452 is closed as withdrawn. Other audited entries remain unreviewed.</p>
 <p id="build" data-build="26767923">Steam testing 26767923 · Version 2026.11.18.5-fireqa</p>
 <p>Steam testing through Perforce CL 3147. Full-game Development startup, both faction Torpedo Bomber controls, and the P-38L recruitment badge passed packaged verification. Player checks below remain open.</p>
@@ -33,8 +34,6 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 </ul>
 <h2>Carry-over checks</h2>
 <ul>
-<li data-id="q408-transparent-formation-spread"><span>Q408 · At 1280 × 720 as both the U.S. and Japan, select multiple ships and multiple land units in turn. Inspect Formation Spread in each supported view. Verify one centered control with a transparent background, the value readable, and plus and minus hit targets aligned. Change spread once in each direction and confirm the selected formation follows the new value.</span><button data-result="✓" aria-label="Pass q408-transparent-formation-spread" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q408-transparent-formation-spread" aria-pressed="false">✕</button></li>
-<li data-id="q408-aviation-counts"><span>Q408 · As the U.S. and Japan at 1280 × 720, open Aviation with a carrier or airfield selected. Change the flight and escort counts where offered. Check that the counts in the upper left are readable and change by the configured step for each control. CAP and Sweep change by two aircraft per click. Check that the adjacent artwork and tooltips stay readable and the next flight uses the displayed count.</span><button data-result="✓" aria-label="Pass q408-aviation-counts" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q408-aviation-counts" aria-pressed="false">✕</button></li>
 <li data-id="q244-jungle-sway"><span>Reported failure on build 26767923 in QA issue #27. Q244 · In a calm stretch of jungle, watch palms and brush at close and tactical zoom. Check for gentle ambient sway at close range, with roots stationary, no abrupt jumps and no excessive movement at tactical zoom.</span><button data-result="✓" aria-label="Pass q244-jungle-sway" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q244-jungle-sway" aria-pressed="false">✕</button></li>
 <li data-id="q244-tank-tree-contact"><span>Q244 · Tank-induced sway works, but its interaction radius is too small. Drive each side of a tank so it grazes a tree. Verify the contact volume covers the full tank width and both edges trigger gentle sway and recovery. Check close and tactical zoom for popping or recurring hitches.</span><button data-result="✓" aria-label="Pass q244-tank-tree-contact" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q244-tank-tree-contact" aria-pressed="false">✕</button></li>
 </ul>
@@ -69,8 +68,6 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 </ul>
 <h2>Q403 · Tutorial progression and saved badges</h2>
 <ul>
-<li data-id="q403-batch1-existing-progress"><span>Q403 · Open a separate profile with only Carrier Basics, Ship Handling and Naval Gunnery previously completed. Verify those three badges carry over and the four new cards start incomplete.</span><button data-result="✓" aria-label="Pass q403-batch1-existing-progress" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-batch1-existing-progress" aria-pressed="false">✕</button></li>
-<li data-id="q403-batch1-incomplete-exit"><span>Q403 · On a clean profile, start Find Your Fleet, pan, then exit to the main menu before using the remaining controls. Verify the card remains incomplete both immediately and after a full relaunch with that profile.</span><button data-result="✓" aria-label="Pass q403-batch1-incomplete-exit" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q403-batch1-incomplete-exit" aria-pressed="false">✕</button></li>
 </ul>
 <h2>Jade Atoll fleet and reinforcement ingress</h2>
 <ul>
@@ -106,7 +103,6 @@ button[aria-pressed=true][data-result="✕"] {background:#873a39}
 </ul>
 <h2>Battle HUD and reports</h2>
 <ul>
-<li data-id="q425-reinforcement-feedback"><span>Q425 · CL 3107 · In Campaign, exercise reinforcement dispatch with a fleet selection that produces long feedback. At 1280 × 720 and a larger size, verify feedback wraps below the controls, remains inside the panel, and leaves the buttons readable and clickable.</span><button data-result="✓" aria-label="Pass q425-reinforcement-feedback" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q425-reinforcement-feedback" aria-pressed="false">✕</button></li>
 </ul>
 <h2>Ground controls and animation</h2>
 <ul>
