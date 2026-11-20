@@ -34,3 +34,9 @@ Infantry, tank, aircraft, ship and AA kills have no per-kill resource bounty. A 
 ## Starting funds
 
 In a **Scenario**, the fleet point budget funds the starting fleet and air wings. The unspent balance is available for reinforcements after deployment. In **Career**, the balance comes from the career bank after purchases. New generated careers start with 12,000 resources.
+
+## Combat Recon purchases
+
+Updated November 20, 2026 for live testing version 2026.11.19.3-sortieqa. In an eligible Career sector, one Combat Recon request costs **450 resources for a three-aircraft squad**: P-38L for the U.S. or Ki-45 for Japan. Availability remains faction- and campaign-dependent. This is a purchase, not an objective payout or a per-kill reward. Read the reinforcement quote before confirming.
+
+See the [current player guide](player-guide-current.md) for the matching Steam build IDs and interface instructions. The objective payout values above retain their original dated scope.
