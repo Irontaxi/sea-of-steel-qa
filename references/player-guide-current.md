@@ -1,10 +1,18 @@
 # Sea of Steel current player guide
 
-Updated November 20, 2026 for **2026.11.19.3-sortieqa**, live in Full **Testing** (26801550) and Demo **Default** (26801533). Source CL3206, configuration CL3207 and approved content through CL3199. The public Full Default build remains 26471403; select the matching build before using these instructions.
+Updated November 21, 2026 for **2026.11.21.2-cooprefresh**, verified live in Full **Testing** (**26835970**) and Demo **Default** (**26835965**). The release includes source CL3243, documentation cut CL3242, aircraft audio CL3238 and the submitted integrations through CL3241. Full public Default remains **26471403**; these instructions target the testing release, not the public Full Default build.
+
+The new snapshot recovery is a bounded safeguard, **not proof that the host-focus-loss guest freeze is fixed**. Physical paired focus-loss acceptance remains open. See [November 21 release and integration notes](main-integration-2026-11-21.md) for inclusion and test limits.
+
+**Current test policy:** all further testing uses the main/full app, including main-host/main-guest multiplayer on separate Steam accounts. Demo builds, cooks, uploads and testing are suspended under the CL3244 policy until the human explicitly reopens actual Demo preparation. The existing Demo release and features are preserved.
 
 ## Interface size
 
 Open Settings with F6 and select the interface/accessibility page. **Interface size** ranges from 75% to 150% in 5% steps, in addition to automatic scaling for the actual window resolution. Changes preview immediately and save on close. Host and guest use independent local values. Narrow or small windows can constrain the final fit.
+
+## Menu access
+
+Settings and Quit remain available in the menu footer. Opening Settings retains the active menu section and selected card; closing or cancelling returns to the existing page.
 
 ## Sortie local card game
 
@@ -14,7 +22,7 @@ Fuel, Ammo and Resources cards pay the costs shown on cards. Select a card to in
 
 In a local two-seat match, hand over the computer and let the incoming player confirm **Ready** before showing the hand. Opposing hands remain concealed. Inspect full card text when the battlefield is crowded.
 
-Closing and reopening Sortie keeps the match in the current running game session. **New Match** starts another match. This first playable has **no online card multiplayer or disk match save**. Its local two-seat mode is separate from naval-battle online co-op. Neutral backs and unmapped-art previews remain provisional; proposed new unit cards have no approved abilities or costs.
+Closing and reopening Sortie keeps the match in the current running game session. **New Match** starts another match. This first playable has **no online card multiplayer or disk match save**. Its local two-seat mode is separate from naval-battle online co-op. Fourteen approved full card faces now appear in the library and inspector. The separate **LIVE** strip shows current model values, including damage/readiness; printed artwork is a reference. Native rules, tooltips and legal actions remain authoritative. This art integration adds no new card abilities. Neutral backs remain provisional.
 
 ## Mine warfare and fleet supply
 
@@ -28,7 +36,7 @@ Fleet supply uses finite stocks. Bring the supply ship and recipient within 75 m
 
 Save selected ships or land units with Shift + 1–9; recall with 1–9. A quick second press glides toward surviving members. The selection header shows the selected count. Shared land orders occupy the first row and applicable abilities appear below.
 
-U.S. infantry can use MG Cover; Japanese infantry can use Bayonet Charge; both use Hand-to-Hand where eligible. Use the offered ability control and a valid visible target where requested. Grenades require a visible dry-land location within range; their blast can harm allies and the thrower. Dig In uses drag-facing placement on reachable, suitable ground and spreads a reduced squad across the continuous trench.
+U.S. infantry can use MG Cover; Japanese infantry can use Bayonet Charge; both use Hand-to-Hand where eligible. Use the offered ability control and a valid visible target where requested. Grenades require a visible dry-land location within range. An admitted grenade follows a flight arc, lands and waits for its fuse before authoritative damage checks current victims and cover. Its blast can harm allies and the thrower. Removing the thrower does not cancel an admitted event. Current-format checkpoints retain pending grenades; older save layouts are not migrated. Actual paired and final visual acceptance remain open. Dig In uses drag-facing placement on reachable, suitable ground and spreads a reduced squad across the continuous trench.
 
 ## Reinforcements and aviation
 
@@ -44,11 +52,23 @@ The submarine depth control shows the current mode; clicking requests the next S
 
 With Labels enabled, select one live unit for passive range overlays; selecting several clears those overlays. Route crosses and lines remain even though the DEST text is removed.
 
-Settings → Audio → **Audio output** selects System Default or an available playback endpoint. Microphone selection is separate. Development Cinematic Freecam retains its existing Pause binding.
+Settings → Audio → **Audio output** selects System Default or an available playback endpoint. Microphone selection is separate. Development Cinematic Freecam retains its existing Pause binding. In active cinematic mode, **Ctrl + Mouse Wheel** changes pitch/yaw look sensitivity from **0.10x to 4.00x**; it resets to 1.00x when cinematic mode is enabled. Pitch and yaw ease towards the aim. Ordinary wheel still changes free-flight speed or follow distance. The F10 overlay shows the look rate.
+
+## New career finale and scenario terrain
+
+Eligible newly generated sector careers can assign an authored finale in the easternmost non-entry sector, with central latitude as the tie break. Its 2,800-point enemy force contains a 2,400-point national capital ship and two 200-point destroyers, paid from the existing budget. Unaffordable setups fail before travel. Existing careers are not retrofitted. Physical finale, current-format save/resume and paired gameplay checks remain open.
+
+Fresh standalone **scenario seed666** uses the corrected 90-degree clockwise shared terrain layout. Existing saved terrain keeps its saved coordinates; career seed666 and other scenario seeds are unchanged. Actual site/world/guest-terrain visual acceptance remains open.
+
+## Co-op snapshot recovery and current checks
+
+In an established guest session, five wall seconds without a successfully completed fleet update during active play can trigger a request for a fresh host-authoritative baseline. Requests have a ten-second cooldown and bounded transactions. Surviving guest objects, selections and camera are retained; genuine removals and assignment revocations still apply. A stopped host, connection or renderer must resume before recovery can help. This safeguard and tracing do not establish the reported freeze's root cause or a paired fix.
+
+Run subsequent multiplayer checks as **main/full host to main/full guest** on separate Steam accounts, using the same testing version. Verify actual moving ship/land/aircraft presentation and executed orders before and after host focus loss. Preserve both complete logs privately with UTC away/return times before reconnecting or toggling pause. Do not infer visible recovery from an order acknowledgement alone. Development trace data distinguishes publication, receipt, commit and presentation; timestamps alone do not prove displayed pixels.
 
 ## Scope and references
 
-Approved asset inclusion through CL3199 does not establish recruitable commandos, guard-dog behavior, prisoner rescue or rubber-duck combat. The proposed super-battleship remains outside this live unit roster. Later source-only changes and queued navigation/settings work are not live-build instructions. Human play, visual approval and paired-session acceptance remain specific to their tested scope.
+Approved asset inclusion through CL3199 does not establish recruitable commandos, guard-dog behavior, prisoner rescue or rubber-duck combat. The campaign capital ships are included in this testing release only for the authored finale of eligible new careers; they are not ordinary fleet purchases or reinforcements. Older diagnostic and source-only notes do not supersede this release identity. Human play, visual approval and paired-session acceptance remain specific to their tested scope.
 
 The printable and in-game handbook revision prepared with this guide is pending integration; this page does not claim it has replaced the handbook in the live build.
 

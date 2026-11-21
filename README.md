@@ -5,6 +5,7 @@ The site root links to the current full-game Steam testing and Steam demo checkl
 ## QA reference
 
 - [Current player guide](references/player-guide-current.md) covers interface size, local Sortie, mines, land orders and the matching live testing build.
+- [November 21 release and integration notes](references/main-integration-2026-11-21.md) record the live co-op recovery build, included changes, remaining test limits and main/full-only testing policy.
 - [Earning resources in a round](references/player-resources.md) lists player objective payouts, reinforcement spending, and what carries into the next sector.
 - [Bot strategy and reinforcements](references/bot-strategy.md) covers enemy behavior, resource costs, arrival rules, and force limits. Update it when those rules change.
 - [Ship stats and damage](references/ship-stats-2026.11.10.2.html) records the unit and weapon values for the named build.
