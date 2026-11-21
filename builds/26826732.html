@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea of Steel QA · 26826732</title>
+<style>
+:root{color-scheme:dark}body{font:16px system-ui;margin:2rem auto;padding:0 1rem;max-width:56rem;background:#172630;color:#eef4f6}h1{color:#e1c798}ul{list-style:none;padding:0}li{display:flex;gap:.8rem;align-items:center;background:#243943;padding:.7rem;margin:.35rem 0}li span{flex:1}button{font:inherit;color:inherit;background:#344d59;border:1px solid #66808d;padding:.35rem .65rem;cursor:pointer}button[aria-pressed=true][data-result="✓"]{background:#20674d}button[aria-pressed=true][data-result="✕"]{background:#873a39}p{color:#c6d5da}textarea{max-width:100%}@media(max-width:520px){li{gap:.35rem}}
+
+a {color:#e1c798} textarea {display:block;width:100%;box-sizing:border-box;margin:.5rem 0 1rem} [hidden] {display:none!important}
+button[aria-pressed=true][data-result="✓"] {background:#20674d}
+button[aria-pressed=true][data-result="✕"] {background:#873a39}
+</style>
+<nav><a href="../">Latest checklist</a> · <a href="../archive.html">Archive</a> · <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues?q=is%3Aissue+QA+sort%3Aupdated-desc">Submissions</a></nav>
+<h1>Sea of Steel QA</h1>
+<p id="build" data-build="26826732">Steam testing 26826732 · Version 2026.11.20.1-coopdiag</p>
+<p id="demo">Matched Demo Default 26826706 · Version 2026.11.20.1-coopdiag. Use separate Steam accounts and start both games with the normal Steam Play button.</p>
+<p>Diagnostic source CL3206, content CL3199 and configuration CL3207 with bounded snapshot logging only. The current audio, fighter, reboard, ingress, UI and Sortie follow-ups are outside this build. This diagnostic collects evidence for the host focus failure.</p>
+<p>Passes and reported failures are retained in <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/27">issue #27</a>, <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/28">issue #28</a> and the <a href="26776503.html">previous checklist</a>. Confirmed passes remain retired. All active results below start unchecked.</p>
+<p>New player instructions and live-build scope are in the <a href="../references/player-guide-current.md">current player guide</a>. Sortie is a local card game in the current running session. Normal interactive play and paired-session acceptance remain open.</p>
+<p>Thirteen passed checks from <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/29">QA issue #29</a> are retired. <a href="../references/qa-issue29-26801550.md">Result record</a>. The reported grenade presentation and timing failure remains open.</p>
+<h2>Host Alt-Tab diagnostic · New paired capture</h2>
+<p>All diagnostic steps start unchecked. Keep full logs and traces private. Browse local files from Steam, then copy SeaBattle/Saved/Logs/SeaBattle.log and its dated backups. If launch options or user-directory settings redirect logs, use the actual destination. Tracing starts automatically.</p>
+<ul>
+<li data-id="coopdiag-update"><span>Diagnostic setup · Update Full Testing to 26826732 and Demo Default to 26826706. Verify both display 2026.11.20.1-coopdiag. On separate Steam accounts, use normal Steam Play. Host owns Full; guest uses Demo entitlement.</span><button data-result="✓" aria-label="Pass coopdiag-update" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coopdiag-update" aria-pressed="false">✕</button></li>
+<li data-id="coopdiag-baseline"><span>Baseline · Start a fresh Full-host lobby, join from Demo and assign a ship. Keep an assigned moving ship and aircraft visible. Compare both clocks and motion for 20 seconds.</span><button data-result="✓" aria-label="Pass coopdiag-baseline" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coopdiag-baseline" aria-pressed="false">✕</button></li>
+<li data-id="coopdiag-host-focus"><span>Host focus · Record UTC time, switch the HOST away from its game for 10 seconds, then return. Keep the guest focused. Record the host return UTC time.</span><button data-result="✓" aria-label="Pass coopdiag-host-focus" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coopdiag-host-focus" aria-pressed="false">✕</button></li>
+<li data-id="coopdiag-return"><span>Return observation · Watch the guest clock, ship and aircraft for 30 seconds after the host returns. Send one guest movement order and separately record whether the host executes it and whether the guest shows the outcome.</span><button data-result="✓" aria-label="Pass coopdiag-return" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coopdiag-return" aria-pressed="false">✕</button></li>
+<li data-id="coopdiag-first-incident"><span>First incident · If presentation freezes, preserve the session while noting camera, markers, counters and aircraft, and whether guest commands reach the host. Collect these observations before reconnecting, reassigning or changing pause.</span><button data-result="✓" aria-label="Pass coopdiag-first-incident" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coopdiag-first-incident" aria-pressed="false">✕</button></li>
+<li data-id="coopdiag-logs"><span>Capture · Save both complete logs privately, labeled Host and Guest, with exact Steam build IDs and the away/return UTC timestamps. Copy the logs and dated backups before another launch rotates them. Record whether SeaCoopTrace entries are present.</span><button data-result="✓" aria-label="Pass coopdiag-logs" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coopdiag-logs" aria-pressed="false">✕</button></li>
+<li data-id="coopdiag-controls"><span>Controls · In separate observations, test ordinary pause/menu resume and guest-only focus loss/return. Record these results for this exact pair, including whether presentation recovers.</span><button data-result="✓" aria-label="Pass coopdiag-controls" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coopdiag-controls" aria-pressed="false">✕</button></li>
+</ul>
+<h2>Current release · Sortie and command checks</h2>
+<ul>
+<li data-id="sortie-library"><span>Sortie · In Full or Demo, open the far-right Sortie tab. Inspect the U.S. and Japanese starters and the card library. Check that each starter contains 45 cards, the library has 58 definitions including supplies and tokens, and each card can be inspected without clipped rules. Treat neutral backs and missing-art previews as provisional.</span><button data-result="✓" aria-label="Pass sortie-library" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail sortie-library" aria-pressed="false">✕</button></li>
+<li data-id="sortie-bot-match"><span>Sortie · Play a full match against the bot with each starter faction. Pay the displayed Fuel, Ammo and Resources costs and exercise deployment, attack, interception and response controls. Verify legal actions progress the match to its ending and unavailable actions explain their requirements. Record the faction, phase and card if play stalls.</span><button data-result="✓" aria-label="Pass sortie-bot-match" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail sortie-bot-match" aria-pressed="false">✕</button></li>
+<li data-id="sortie-local-privacy"><span>Sortie · Play a local two-seat match. At each handoff, check the incoming player must confirm Ready before their hand appears. Check that the opposing hand stays concealed, including when inspecting a crowded battlefield and after returning to Sortie.</span><button data-result="✓" aria-label="Pass sortie-local-privacy" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail sortie-local-privacy" aria-pressed="false">✕</button></li>
+<li data-id="sortie-session"><span>Sortie · Close and reopen Sortie in the same running game. Verify the current match resumes. Start New Match and verify a fresh match replaces it without stale selections or response controls. Record any card action that triggers after changing matches.</span><button data-result="✓" aria-label="Pass sortie-session" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail sortie-session" aria-pressed="false">✕</button></li>
+
+<li data-id="land-selection-current"><span>Land selection · Assign land groups with Shift plus 1–9 and recall them by number. Check the header shows the selected count and a quick second recall glides toward surviving members. Inspect the first row of shared orders and the applicable ability rows for one squad, several squads and a tank.</span><button data-result="✓" aria-label="Pass land-selection-current" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail land-selection-current" aria-pressed="false">✕</button></li>
+<li data-id="infantry-grenade"><span>Infantry grenades · Failed in issue #29: no grenade was visible, and damage applied immediately when the location was selected. On a visible dry-land target within range, verify a visible throw and travelling grenade, with damage at impact. Check stock use, invalid targets and friendly fire in a disposable battle. Record the unit and target distance if damage remains instant.</span><button data-result="✓" aria-label="Pass infantry-grenade" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail infantry-grenade" aria-pressed="false">✕</button></li>
+<li data-id="infantry-dig-in"><span>Infantry Dig In · Drag the facing on reachable suitable ground and commit. Verify the squad moves into a continuous trench with the requested orientation. Repeat with a reduced squad and check the surviving soldiers spread across the trench.</span><button data-result="✓" aria-label="Pass infantry-dig-in" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail infantry-dig-in" aria-pressed="false">✕</button></li>
+<li data-id="reinforcement-filters"><span>Reinforcements · Switch All, Ships, Land Units and Planes. Verify each list and quote matches the filter, including a legitimately empty Land Units list. Confirm a purchase and check the offered ingress and destination controls complete the deployment.</span><button data-result="✓" aria-label="Pass reinforcement-filters" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail reinforcement-filters" aria-pressed="false">✕</button></li>
+<li data-id="career-combat-recon"><span>Career Combat Recon · In an eligible sector as each faction, buy the quoted 450-resource package. Verify it supplies three faction aircraft (U.S. P-38L or Japanese Ki-45), follows the chosen edge ingress and patrol/screen area, and charges once.</span><button data-result="✓" aria-label="Pass career-combat-recon" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail career-combat-recon" aria-pressed="false">✕</button></li>
+<li data-id="aviation-new-sortie"><span>Aviation · With an eligible carrier and aircraft ready, launch a new sortie. Select an existing flight and redirect it through the flight controls. Check new launch orders create a fresh flight while redirecting retains the selected one. Check dive/torpedo bomber selection before a strike.</span><button data-result="✓" aria-label="Pass aviation-new-sortie" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail aviation-new-sortie" aria-pressed="false">✕</button></li>
+<li data-id="mine-owner"><span>Mine ownership · On this build, turn a minelayer through a mine it just placed and verify that exact hull is immune. Use a different friendly hull to confirm the mine remains dangerous to other ships. Save and reload on the same build and repeat the ownership check.</span><button data-result="✓" aria-label="Pass mine-owner" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail mine-owner" aria-pressed="false">✕</button></li>
+<li data-id="supply-75m"><span>Fleet supply · Bring supplier and recipient within 75 m, slow or stop both and run the simulation. Verify finite fuel, ammunition and mine stocks transfer, then stop at exhaustion. Compare U.S. and Japanese specialist hull visuals during the transfer.</span><button data-result="✓" aria-label="Pass supply-75m" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail supply-75m" aria-pressed="false">✕</button></li>
+<li data-id="sub-depth-state"><span>Submarine depth · Select a submarine and cycle Surface, Periscope and Deep. Verify the control shows the current mode and requests the next one, with depth and battery restrictions enforced. Check a mixed selection uses the first eligible submarine.</span><button data-result="✓" aria-label="Pass sub-depth-state" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail sub-depth-state" aria-pressed="false">✕</button></li>
+<li data-id="single-range-dest"><span>Tactical labels · With Labels On select one live unit and verify passive firing and vision ranges. Select several and check the overlays clear. Issue a move and verify route crosses and lines remain while the DEST text is absent.</span><button data-result="✓" aria-label="Pass single-range-dest" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail single-range-dest" aria-pressed="false">✕</button></li>
+<li data-id="audio-output"><span>Audio output · In Settings → Audio, switch between System Default and an available playback endpoint. Verify game playback follows the selected output and microphone selection remains independent.</span><button data-result="✓" aria-label="Pass audio-output" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail audio-output" aria-pressed="false">✕</button></li>
+</ul>
+<h2>November 20 · Human co-op retest</h2>
+<p>On Full Testing 26801550 and Demo Default 26801533, the tester confirmed connection, aircraft visibility, controls and handoffs, and menu pause/resume working. <a href="../references/qa-human-mp-20261120.md">Dated result and attribution</a>. Eight matching basic retest rows are retired. Detailed unreported scenarios remain open.</p>
+<ul>
+<li data-id="mp-alt-tab-presentation-resume"><span>Co-op · Host Alt-Tab presentation resume · Confirmed failure on Full 26801550 and Demo 26801533. Alt-Tab on the HOST PC and return. The guest remained connected and assigned and could issue commands, but never recovered live planes, command feedback or visual updates; host-side command outcomes remained normal. Repeat and record whether guest presentation recovers after host focus returns.</span><button data-result="✓" aria-label="Pass mp-alt-tab-presentation-resume" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail mp-alt-tab-presentation-resume" aria-pressed="false">✕</button></li>
+</ul>
+<h2>Host-menu pause retest</h2><ul>
+
+
+
+<li data-id="pause9-4"><span>Q435 · Pause normally, then open and close host Settings. Verify the battle remains paused until the host explicitly resumes.</span><button data-result="✓" aria-label="Pass pause9-4" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail pause9-4" aria-pressed="false">✕</button></li>
+<li data-id="pause9-5"><span>Q435 · Keep guest Settings open while the host pauses and resumes. Close guest Settings and verify it follows current host state rather than restoring stale pause.</span><button data-result="✓" aria-label="Pass pause9-5" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail pause9-5" aria-pressed="false">✕</button></li>
+</ul><h2>Carry-over co-op checks</h2>
+<ul>
+<li data-id="coop8-1"><span>Q352 · Launch host-owned aircraft, then guest-issued sorties from an assigned carrier. Compare models and flight markers during launch and orbit. Reclaim the carrier and verify visibility and command ownership.</span><button data-result="✓" aria-label="Pass coop8-1" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coop8-1" aria-pressed="false">✕</button></li>
+<li data-id="coop8-2"><span>Q435 · Join while host Settings is open. Close Settings and compare both clocks and pause indicators. Repeat after connecting, with guest Settings open and closed.</span><button data-result="✓" aria-label="Pass coop8-2" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coop8-2" aria-pressed="false">✕</button></li>
+<li data-id="coop8-3"><span>Q352 · Verify guest command acknowledgments, engines, cannon and AA positional sound. Test VOIP send and receive in both directions and record game audio and voice separately.</span><button data-result="✓" aria-label="Pass coop8-3" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coop8-3" aria-pressed="false">✕</button></li>
+<li data-id="coop8-4"><span>Q352 · Assign and reclaim infantry, tanks and other supported land units. Check guest movement, combat abilities and transport unload orders. Verify host cannot override assigned units and guest cannot command unassigned units.</span><button data-result="✓" aria-label="Pass coop8-4" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coop8-4" aria-pressed="false">✕</button></li>
+<li data-id="coop8-5"><span>Q408 · As both factions at gameplay scale, inspect mine, sweep and depth-charge badges. Check upper-left live stock, centered ON/OFF text and blue bottom-up reload bars on host and guest.</span><button data-result="✓" aria-label="Pass coop8-5" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coop8-5" aria-pressed="false">✕</button></li>
+<li data-id="coop8-6"><span>Q435 · Disconnect, change host units, orders and pause state, then rejoin. Verify fresh full terrain and unit/flight state without stale entry islands, duplicates or old assignments.</span><button data-result="✓" aria-label="Pass coop8-6" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coop8-6" aria-pressed="false">✕</button></li>
+<li data-id="coop8-7"><span>Q435 · Save normally as host, resume into a fresh lobby and join again. Reassign units and verify guest orders.</span><button data-result="✓" aria-label="Pass coop8-7" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coop8-7" aria-pressed="false">✕</button></li>
+<li data-id="coop8-8"><span>Q352 · Send one map ping in each direction. Check local feedback, remote receipt and correct position. Middle-drag should tilt without pinging.</span><button data-result="✓" aria-label="Pass coop8-8" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail coop8-8" aria-pressed="false">✕</button></li></ul><p>Known follow-up: aircraft stream has a fixed-order 192-part cap. Audio output-device settings and later header/land-row/art refinements are outside this build. Q474 is pending integration; its sea-floor, shoreline-blend and ship-circuit checks belong to the first containing build.</p><h2>Carry-over checks</h2><ul><li data-id="fireqa-0"><span>Q470 · Restart and update both Steam games. Compare a visible burning hull on host and guest at matching camera distance. Check flame sites and placement before handoff, while assigned, and after reclaim.</span><button data-result="✓" aria-label="Pass fireqa-0" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail fireqa-0" aria-pressed="false">✕</button></li>
+<li data-id="fireqa-1"><span>Q470 · Extinguish and reignite a hull. Verify all flame sites stop and restart on both screens.</span><button data-result="✓" aria-label="Pass fireqa-1" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail fireqa-1" aria-pressed="false">✕</button></li>
+<li data-id="fireqa-2"><span>Q470 · Compare visible sinking and wreck cleanup. Flames should diminish during sinking and disappear when the hull is no longer visible.</span><button data-result="✓" aria-label="Pass fireqa-2" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail fireqa-2" aria-pressed="false">✕</button></li>
+<li data-id="fireqa-3"><span>Q470 · Submerge a burning submarine and surface it again. Verify submerged flames are hidden and surfaced burning flames appear on both screens.</span><button data-result="✓" aria-label="Pass fireqa-3" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail fireqa-3" aria-pressed="false">✕</button></li>
+<li data-id="fireqa-4"><span>Q435 · While joining and after connecting, open and close host Settings. Verify both clocks and pause states agree. Repeat with host already paused, then open guest Settings and check host time.</span><button data-result="✓" aria-label="Pass fireqa-4" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail fireqa-4" aria-pressed="false">✕</button></li>
+<li data-id="fireqa-5"><span>Q352 · Put infantry, tanks and artillery ashore. Hand off and reclaim each supported type. Compare guest Movement and Combat panels, badges, tooltips and available orders against the host for both factions. Verify guests can deploy troops from assigned transports and cannot order unassigned units.</span><button data-result="✓" aria-label="Pass fireqa-5" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail fireqa-5" aria-pressed="false">✕</button></li></ul><h2>Earlier changes carried forward</h2>
+<ul>
+<li data-id="q462-scarlet-reef"><span>Q462 · Order a large fleet around land. Check that ships keep moving, avoid hull overlap, and settle into formation. Note the seed, order and camera view if movement stalls.</span><button data-result="✓" aria-label="Pass q462-scarlet-reef" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q462-scarlet-reef" aria-pressed="false">✕</button></li>
+<li data-id="q466-visual-tides"><span>Q466 · In the full Development build, open Debug during a battle and step the clock. Watch the shoreline and anchored ships as water height changes. Resume and verify the clock and tide continue progressing.</span><button data-result="✓" aria-label="Pass q466-visual-tides" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q466-visual-tides" aria-pressed="false">✕</button></li>
+
+
+<li data-id="q408-torpedo-bomber-toggle"><span>Q408 · At 1280 × 720 as the U.S. and Japan, select a carrier and open Aviation. Switch Bomber Type to Torpedo Bomber and back. Verify each faction shows its approved Torpedo Bomber illustration, the other type restores its own artwork, the tooltip identifies the current action, and both clicks switch the type without clipping adjacent controls.</span><button data-result="✓" aria-label="Pass q408-torpedo-bomber-toggle" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q408-torpedo-bomber-toggle" aria-pressed="false">✕</button></li>
+
+</ul>
+<h2>Carry-over checks</h2>
+<ul>
+
+
+</ul>
+<h2>Q451 · P-38L recruitment and propeller blur</h2>
+<ul>
+
+
+
+</ul>
+<h2 id="demo">Q435 · Full game host and demo guest over EOS</h2>
+<p>Steam confirms full-game Testing 26801550 and Demo Default 26801533, both version 2026.11.19.3-sortieqa. Live QA confirmed the Demo guest joined and received terrain and fleet snapshots. IronTaxi confirmed both Demo-to-Main and Main-to-Main EOS connections work. In-session presentation and control checks remain open. Keep join codes out of public reports.</p>
+<ul>
+<li data-id="q435-guest-order"><span>Q435 · Hand off a ship to the guest and verify their move order on both screens. Use normal host save and resume on the same build, join again with the current code if needed, hand off a ship and verify the guest can command it again.</span><button data-result="✓" aria-label="Pass q435-guest-order" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q435-guest-order" aria-pressed="false">✕</button></li>
+<li data-id="q435-leave-rejoin"><span>Q435 · Use Leave Session on the demo while the host battle is running. Verify the host sees the guest leave and the battle continues. Change unit orders and launch a flight on the host while the guest is away. Rejoin with the current code. Verify the guest receives the current AO terrain, clock, units, flights, contacts and assignments without stale or duplicate state. Repeat after an unexpected drop.</span><button data-result="✓" aria-label="Pass q435-leave-rejoin" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q435-leave-rejoin" aria-pressed="false">✕</button></li>
+<li data-id="q435-guest-command-audio"><span>Co-op · Guest command audio · Reported failure: command sounds played for the host but were missing on the demo guest. Issue the same available order on each client. Compare expected command acknowledgements and other game audio separately.</span><button data-result="✓" aria-label="Pass q435-guest-command-audio" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q435-guest-command-audio" aria-pressed="false">✕</button></li>
+<li data-id="q435-guest-hud-icons"><span>Co-op · Guest HUD icons · Reported failure: many old icons appeared in the demo guest HUD. Compare both clients using the same view, faction, selection and resolution. Record the affected panels and actions, with a screenshot of each stale icon.</span><button data-result="✓" aria-label="Pass q435-guest-hud-icons" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q435-guest-hud-icons" aria-pressed="false">✕</button></li>
+</ul>
+<p>Startup playback and skip, the formation guide marker, and tank turret traverse passed on this build. See <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/26">QA issue #26</a>.</p>
+<h2>Q408 · Fleet roster and command icons</h2>
+<ul>
+</ul>
+<h2>Co-op in-session regressions</h2>
+<p>Run these checks once two players are connected in the same battle on build 26801550. If a playable session is unavailable, record these as blocked in Notes. Keep raw logs and connection details private.</p>
+<ul>
+<li data-id="q352-host-pause-replication"><span>Q352 · Guest camera while paused · Basic host pause/resume passed. Pause on the host and verify the guest can pan its camera while both clocks stay paused.</span><button data-result="✓" aria-label="Pass q352-host-pause-replication" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-host-pause-replication" aria-pressed="false">✕</button></li>
+<li data-id="q435-settings-during-join"><span>Q435 · Reported failure. Open and close host Settings while the Demo is joining. Compare the pause indicator and clock as soon as the guest reaches Tactical View. Repeat while both players are already connected.</span><button data-result="✓" aria-label="Pass q435-settings-during-join" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q435-settings-during-join" aria-pressed="false">✕</button></li>
+
+
+<li data-id="q352-guest-contact-cycle"><span>Q352 · Contact cycling · With two detected contacts, use Shift+G or Next Contact as guest and check that the selection and highlight advance. Check Tab separately with default controls. Tab is the host's Command View shortcut and should leave the guest in Tactical View.</span><button data-result="✓" aria-label="Pass contact cycling" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail contact cycling" aria-pressed="false">✕</button></li>
+<li data-id="q352-shared-fog"><span>Q352 · Shared fog · Scout a previously unseen enemy contact. Compare screens at the same moment. Both players should receive the newly detected contact, while enemies outside shared detection stay hidden.</span><button data-result="✓" aria-label="Pass shared fog" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail shared fog" aria-pressed="false">✕</button></li>
+<li data-id="q352-map-pings"><span>Q352 · Map pings · Reported failure: the demo guest got no visible feedback after a middle click. Test one click from the guest and one from the host at different landmarks. Record local feedback and remote receipt separately for each direction. Check that a middle drag tilts without pinging.</span><button data-result="✓" aria-label="Pass q352-map-pings" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q352-map-pings" aria-pressed="false">✕</button></li>
+</ul>
+<h2>Q403 · Tutorial progression and saved badges</h2>
+<ul>
+</ul>
+<h2>Jade Atoll fleet and reinforcement ingress</h2>
+<ul>
+<li data-id="cl3083-jade-starting-fleet"><span>Q414 · Load the latest Jade Atoll campaign checkpoint (seed 697050). Resume at 1× and watch the first few seconds. Check whether the game hitches on the first resume, then verify the fleet continues its active orders. In a fresh Jade Atoll run, confirm the starting fleet deploys into navigable water and clears the shore.</span><button data-result="✓" aria-label="Pass cl3083-jade-starting-fleet" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail cl3083-jade-starting-fleet" aria-pressed="false">✕</button></li>
+<li data-id="cl3083-jade-reinforcements"><span>Q414 · In Jade Atoll, inspect which reinforcement ingress lanes are offered before and after loading. Dispatch through an eligible lane and watch every hull enter clear water and continue toward its first waypoint. Record the group, game time and lane if any ship remains blocked.</span><button data-result="✓" aria-label="Pass cl3083-jade-reinforcements" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail cl3083-jade-reinforcements" aria-pressed="false">✕</button></li>
+<li data-id="cl3083-jade-save-reload"><span>Jade Atoll save and reload · Save a new battle while reinforcements are entering or underway, with the starting fleet also in motion. Load the same AO and resume. Confirm existing ships keep their saved positions and orders, the reinforcement group continues without duplicating or restarting ingress, and the fleet remains clear of the shore.</span><button data-result="✓" aria-label="Pass cl3083-jade-save-reload" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail cl3083-jade-save-reload" aria-pressed="false">✕</button></li>
+<li data-id="cl3083-jade-route-hitch"><span>Q415 · Watch for a regular hitch as the starting fleet and reinforcements route near the Jade Atoll shore. If it recurs, capture a short trace with Debug → Start Trace and Stop Trace. Report the seed, game time, orders, approximate interval and number of moving ships. Keep the raw trace and logs private.</span><button data-result="✓" aria-label="Pass cl3083-jade-route-hitch" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail cl3083-jade-route-hitch" aria-pressed="false">✕</button></li>
+</ul>
+<h2>Control groups and saves</h2>
+<ul>
+
+</ul>
+<h2>Naval movement performance</h2>
+<ul>
+<li data-id="q415-coastal-placement"><span>Q415 · Move several ships along a coast or through a narrow passage, then let them try to settle at a constrained final waypoint. Watch for a repeating hitch roughly four times a second while ships regroup. If it recurs, include the scenario or seed, the order, and a performance trace.</span><button data-result="✓" aria-label="Pass q415-coastal-placement" aria-pressed="false">✓</button><button data-result="✕" aria-label="Fail q415-coastal-placement" aria-pressed="false">✕</button></li>
+</ul>
+<h2>AA escorts, shorelines and mines</h2>
+<ul>
+
+</ul>
+
+<h2>Infantry abilities</h2>
+<ul>
+
+
+</ul>
+<h2>Battle HUD and reports</h2>
+<ul>
+</ul>
+<h2>Ground controls and animation</h2>
+<ul>
+</ul>
+
+<p>Gallery resize and Escape passed on <a href="26677475.html">build 26677475</a>. The prior startup audio and mine results are recorded on <a href="26676196.html">build 26676196</a>.</p>
+<p>Prior reports for wreck reload and movement-order changes are in <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/22">QA issue #22</a>. Earlier reports of missing aircraft and uneven movement are in <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/19">QA issue #19</a>.</p>
+<p>Build 26705085 tester results are archived in <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/23">QA issue #23</a> and <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/24">QA issue #24</a>. Sector 01 preview and deployment passed with south and west ingress lanes.</p>
+<p>All seven tutorial lessons passed on build 26705085. The Continue Tutorial sequence failure and earlier numbered-group failure are recorded in <a href="https://github.com/Irontaxi/sea-of-steel-qa/issues/25">QA issue #25</a>.</p>
+<label for="notes">Notes for QA</label>
+<textarea id="notes" rows="4" placeholder="What happened? Include the seed and steps if relevant."></textarea>
+<p>Submissions are public on GitHub. Edit your existing issue to report a retest of this build.</p>
+<button id="submit" type="button">Submit to GitHub</button>
+<button id="copy" type="button">Copy results</button>
+<p id="status" role="status"></p>
+<textarea id="results" hidden readonly rows="12" aria-label="Results to copy"></textarea>
+<script src="../checklist.js" defer></script>
+</html>
