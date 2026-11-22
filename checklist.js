@@ -6,6 +6,12 @@ const results = document.querySelector('#results');
 const key = 'sea-of-steel-qa-' + build.dataset.build;
 let state = { marks: {}, notes: '' };
 try { state = JSON.parse(localStorage.getItem(key)) || state; } catch {}
+for (const row of rows) {
+    const initial = row.dataset.initialResult;
+    if (initial && !Object.prototype.hasOwnProperty.call(state.marks, row.dataset.id)) {
+        state.marks[row.dataset.id] = initial;
+    }
+}
 notes.value = state.notes;
 function save() {
     try { localStorage.setItem(key, JSON.stringify(state)); } catch {}
