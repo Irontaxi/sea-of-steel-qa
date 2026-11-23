@@ -1,8 +1,8 @@
 # Sea of Steel current player guide
 
-Updated November 21, 2026 for **2026.11.21.2-cooprefresh**, verified live in Full **Testing** (**26835970**) and Demo **Default** (**26835965**). The release includes source CL3243, documentation cut CL3242, aircraft audio CL3238 and the submitted integrations through CL3241. Full public Default remains **26471403**; these instructions target the testing release, not the public Full Default build.
+Updated November 23, 2026 for **2026.11.23.1-mainqa**, verified live in Full **Testing** (**26869374**). The source cut is **CL3266**: transport gameplay compiled in CL3265 plus content-only retirement of six unused prototype definitions. Shared models, textures, materials and weapon artwork remain. Full public Default stays **26471403**; Demo stays **26835965** and remains suspended from further builds/testing. These instructions target Full Testing.
 
-The new snapshot recovery is a bounded safeguard, **not proof that the host-focus-loss guest freeze is fixed**. Physical paired focus-loss acceptance remains open. See [November 21 release and integration notes](main-integration-2026-11-21.md) for inclusion and test limits.
+November 21 co-op note, retained without new paired-session acceptance: snapshot recovery is a bounded safeguard, **not proof that the host-focus-loss guest freeze is fixed**. Physical paired focus-loss acceptance remains open. See [November 21 release and integration notes](main-integration-2026-11-21.md) for inclusion and test limits.
 
 **Current test policy:** all further testing uses the main/full app, including main-host/main-guest multiplayer on separate Steam accounts. Demo builds, cooks, uploads and testing are suspended under the CL3244 policy until the human explicitly reopens actual Demo preparation. The existing Demo release and features are preserved.
 
@@ -32,6 +32,16 @@ Sweeping on an eligible ship limits forward speed to half and detects enemy mine
 
 Fleet supply uses finite stocks. Bring the supply ship and recipient within 75 m, slow or stop both, and let simulation time run to transfer fuel, shells and mines. U.S./Japanese supply, minelayer and minesweeper hull presentation includes the current specialist art adjustments; visual changes do not grant new inventory or abilities.
 
+## Mixed transports and physical recovery
+
+**Transport has three mixed cargo slots; Large landing craft has two.** Configure each new hull before confirming purchase or deployment. A slot holds an amphibious tank, amphibious supply truck, troop truck with eight passengers, or a paid infantry boat with twelve people. Infantry boats carry no vehicles or nested boats and cannot be bought separately. Existing direct grants remain, with twelve people per fresh small-craft cohort.
+
+Deploy mixed cargo from the bow into clear water, then order vehicles ashore and land the small boat at a suitable natural beach. Recover the same actual units through the re-embark controls and a compatible free slot. Stop pending launch or landing operations first. Vehicles must be within **80 m** to request return and then move to the bow; boats reserve a slot and return physically. Crew, damage, fuel, ammunition and finite supplies remain with the units through recovery and same-format saves. Owned cargo controls cannot refill them.
+
+Current hull prices are **600 / 450**, plus **150** per tank, **100** per supply truck, **180** per truck with eight passengers, or **170** per twelve-person infantry boat including its hull once. Read the [resource and cargo quote reference](player-resources.md#mixed-transport-and-cargo-purchases) and the actual confirmation quote. The existing Amphibious Assault grant remains two craft at 350 each, with a 4,050-point trial force and 5,000-point budget. Saved or active cohorts are not resized by fresh defaults.
+
+This transport behavior is live in the release above. Newly prepared in-game handbook wording is pending a future compiled build. The sections retained below keep their dated test limits; this transport update does not certify unrelated paired, input or visual checks.
+
 ## Land command
 
 Save selected ships or land units with Shift + 1–9; recall with 1–9. A quick second press glides toward surviving members. The selection header shows the selected count. Shared land orders occupy the first row and applicable abilities appear below.
@@ -42,7 +52,7 @@ U.S. infantry can use MG Cover; Japanese infantry can use Bayonet Charge; both u
 
 Filter the catalogue with **All**, **Ships**, **Land Units** or **Planes**. A Land Units list may be empty where direct purchases are unavailable. Read the quote before confirming, then choose ingress and destination as prompted.
 
-Eligible Career sectors offer faction-specific **Combat Recon**: 450 resources purchases **three aircraft**. U.S. forces receive P-38L; Japan receives Ki-45. Choose map-edge ingress and a patrol/screen area. The deferred single-aircraft/fighter-model follow-up is not part of these instructions.
+Eligible Career sectors offer faction-specific **Combat Recon**: **450 resources purchases one aircraft**, P-38L for the U.S. or Ki-45 for Japan, using normal fighter flight dynamics. Choose map-edge ingress and a patrol/screen area. This is the current integrated behavior in 2026.11.23.1-mainqa; the earlier three-aircraft description is historical.
 
 The Aviation panel creates a fresh sortie when aircraft and launch conditions allow. Use selected-flight controls to redirect an existing flight. Select dive or torpedo bombers before a carrier strike.
 
@@ -76,3 +86,4 @@ The printable and in-game handbook revision prepared with this guide is pending 
 - [Bot strategy and reinforcements](bot-strategy.md)
 - [Historical ship stats for 2026.11.10.2](ship-stats-2026.11.10.2.html) — a dated reference, not a current-stat snapshot.
 - [Reference index](../README.md#qa-reference)
+

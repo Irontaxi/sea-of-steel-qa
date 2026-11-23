@@ -37,6 +37,28 @@ In a **Scenario**, the fleet point budget funds the starting fleet and air wings
 
 ## Combat Recon purchases
 
-Updated November 20, 2026 for live testing version 2026.11.19.3-sortieqa. In an eligible Career sector, one Combat Recon request costs **450 resources for a three-aircraft squad**: P-38L for the U.S. or Ki-45 for Japan. Availability remains faction- and campaign-dependent. This is a purchase, not an objective payout or a per-kill reward. Read the reinforcement quote before confirming.
+Updated November 23, 2026 for Full Testing **2026.11.23.1-mainqa** (build **26869374**, source CL3266 / compiled CL3265). In an eligible Career sector, one Combat Recon request costs **450 resources for one aircraft**: P-38L for the U.S. or Ki-45 for Japan, using normal fighter flight dynamics. The earlier November 20 three-aircraft description belongs to that older release. Availability remains faction- and campaign-dependent. This is a purchase, not an objective payout or a per-kill reward. Read the current reinforcement quote before confirming.
 
 See the [current player guide](player-guide-current.md) for the matching Steam build IDs and interface instructions. The objective payout values above retain their original dated scope.
+
+## Mixed transport and cargo purchases
+
+Current configured prices in Full Testing **2026.11.23.1-mainqa / 26869374**, source CL3266 with compiled transport CL3265:
+
+| Hull or cargo package | Points / purchase quote |
+| --- | ---: |
+| Transport hull — three mixed slots | 600 |
+| Large landing craft hull — two mixed slots | 450 |
+| One amphibious tank — one slot | +150 |
+| One amphibious supply truck — one slot | +100 |
+| One troop truck with eight passengers — one slot | +180 |
+| One infantry boat with twelve people — one slot | +170, including the boat hull once |
+
+Configure each new hull before purchase/deployment or reinforcement confirmation. Only packages offered for that country are available. Deployment points limit the starting force; Career purchases and confirmed reinforcement orders debit their applicable resource balance. The checked quote includes hull and payload once. For example, a Transport with a tank, troop truck and infantry boat totals **1,100**; a Large landing craft with a supply truck and infantry boat totals **720**. These are current designer prices, not a promise that future balancing will retain them.
+
+Small infantry boats are **granted or launched as actual paid cargo**, not sold as standalone new purchases. Amphibious Assault retains its two granted craft at 350 points each and the existing 4,050-point trial force within a 5,000-point budget; fresh infantry cohorts carry twelve people. The retained legacy troop transport also stages twelve per fresh boat. Already saved/active cohorts are not resized.
+
+Owned cargo is read-only in the purchase controls. Launch, land and physically recover the same units to preserve their identities, crews, damage, fuel, ammunition and finite supplies; changing a count is not a resupply mechanism. Stop pending launch/landing operations before recovery. Amphibious vehicles must be within **80 m** to request boarding and then move to the bow; boats reserve a compatible free slot and return physically. A dispatched paid reinforcement transfers its existing cargo records without charging for them again.
+
+The transport gameplay is live in the build above. Newly prepared handbook text describing it awaits a future compiled build; this web update does not rebuild the game or printable manual.
+
