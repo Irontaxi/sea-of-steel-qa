@@ -1,0 +1,709 @@
+{
+  "schema": "sea-of-steel-sortie-definition-form-v1",
+  "scope": "Steam Testing 26885752 / 2026.11.23.2-main / compiled CL3282; 58 native catalog cards. Candidate index reconciled from Nov19/20 evidence; faction labels identify references, not approved deck availability.",
+  "rows": [
+    {
+      "id": "candidate-battlecruiser",
+      "name": "Battlecruiser",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Naval hull role. The catalog has Cruiser and Battleship cards but no distinct Battlecruiser card; choose whether this merits a separate role.",
+      "images": [
+        {
+          "src": "images/ee8d1a4a39d9189b.webp",
+          "caption": "US collectible reference · not approved Sortie rules",
+          "width": 1000,
+          "height": 563
+        },
+        {
+          "src": "images/eb2d761da33df1f8.webp",
+          "caption": "JP collectible reference · not approved Sortie rules",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-large-landing-craft",
+      "name": "Large landing craft",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Current Large landing craft has two slots for amphibious tanks, supply trucks, trucks with eight passengers or direct twelve-person squads. Beach-only deployment and recovery; no small-boat cargo. No distinct current Sortie card.",
+      "images": [
+        {
+          "src": "images/0ab14d701aa46374.webp",
+          "caption": "US existing badge reference · native size",
+          "width": 96,
+          "height": 96
+        },
+        {
+          "src": "images/c49384d72cd009a9.webp",
+          "caption": "JP existing badge reference · native size",
+          "width": 96,
+          "height": 96
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-transport",
+      "name": "Transport",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Current offshore Transport has three mixed cargo slots for amphibious tanks, supply trucks, trucks with eight passengers or paid infantry boats with twelve. Existing Troop Transport and Tank Transport Sortie cards remain defined; this is a consolidation/inclusion decision, not two extra legacy variants.",
+      "images": [
+        {
+          "src": "images/c4c66272239f9131.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 667
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-light-convoy-transport",
+      "name": "Light Convoy Transport",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Smaller convoy transport reference. Existing Convoy card remains defined; decide whether the separate model/role needs a card or uses that existing card.",
+      "images": [
+        {
+          "src": "images/b8aa4ede849cc0e7.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 529
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-ice-cream-barge",
+      "name": "Ice Cream Barge",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Support-vessel model/role reference. No distinct Sortie card. Faction and deck inclusion need a design decision.",
+      "images": [
+        {
+          "src": "images/c93c8d29c5d0f42e.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 607
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-recon-aircraft",
+      "name": "Recon Aircraft",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Reconnaissance aircraft role. Fighter Patrol and other current air cards remain defined; a distinct reconnaissance card is undecided.",
+      "images": [
+        {
+          "src": "images/50f9f500a9c2888a.webp",
+          "caption": "U.S. scout model reference",
+          "width": 940,
+          "height": 570
+        },
+        {
+          "src": "images/27ddf5b4dd3a0411.webp",
+          "caption": "Japanese recon model reference",
+          "width": 940,
+          "height": 570
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-cruiser-scout-floatplane",
+      "name": "Cruiser Scout Floatplane",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Ship-associated scout aircraft role. No distinct Sortie card; decide whether a separate card or part of another unit is appropriate.",
+      "images": [
+        {
+          "src": "images/99971c0c91472010.webp",
+          "caption": "Aircraft family reference · not an exact floatplane card",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-torpedo-bomber",
+      "name": "Torpedo Bomber",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Aircraft role with torpedo attack presentation. Torpedo Run already exists as an order card; a distinct aircraft card is not defined.",
+      "images": [
+        {
+          "src": "images/b7eaf2e0155e2aea.webp",
+          "caption": "Existing Torpedo Run order artwork · reference for aircraft role, not its card",
+          "width": 1000,
+          "height": 714
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-japanese-kamikaze",
+      "name": "Japanese Kamikaze",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP"
+      ],
+      "description": "Japanese attack role. Existing Japanese rules are preserved; the indexed unit role has no distinct Sortie card.",
+      "images": [
+        {
+          "src": "images/3f3eb013580a7db0.webp",
+          "caption": "Japanese aircraft family reference · not an approved Kamikaze face",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-uk-lvt-a1",
+      "name": "UK LVT A1",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "UK"
+      ],
+      "description": "UK LVT(A)-1 amphibious vehicle reference. A UK asset is not proof of availability in a U.S. or Japanese deck; inclusion requires a decision.",
+      "images": [
+        {
+          "src": "images/10e02701ed56dc82.webp",
+          "caption": "Existing UK LVT(A)-1 unit reference",
+          "width": 1000,
+          "height": 750
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-field-gun",
+      "name": "Field Gun",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Ground artillery role. No distinct current Sortie card.",
+      "images": [
+        {
+          "src": "images/50bbe24bc438dfc6.webp",
+          "caption": "Existing Field Gun unit reference",
+          "width": 1000,
+          "height": 600
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-machine-gun-nest",
+      "name": "Machine Gun Nest",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Ground defensive MG position. No distinct current Sortie card.",
+      "images": [
+        {
+          "src": "images/0338590e103eab3e.webp",
+          "caption": "Curved MG nest model reference",
+          "width": 1000,
+          "height": 656
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-beach-mg-bunker",
+      "name": "Beach MG Bunker",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Beach defensive MG bunker role. No distinct current Sortie card.",
+      "images": [
+        {
+          "src": "images/eff632e0e5fdfb93.webp",
+          "caption": "Bunker family reference · not an exact Beach MG Bunker card",
+          "width": 1000,
+          "height": 475
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-gun-bunker",
+      "name": "Gun Bunker",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Fixed gun bunker role. Existing Coastal Battery cards are defined; decide whether this needs a distinct representation.",
+      "images": [
+        {
+          "src": "images/eff632e0e5fdfb93.webp",
+          "caption": "Bunker family reference · not an exact Gun Bunker card",
+          "width": 1000,
+          "height": 475
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-concrete-pillbox",
+      "name": "Concrete Pillbox",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Concrete defensive position. No distinct current Sortie card.",
+      "images": [
+        {
+          "src": "images/eff632e0e5fdfb93.webp",
+          "caption": "Bunker family reference · not an exact Concrete Pillbox card",
+          "width": 1000,
+          "height": 475
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-timber-pillbox",
+      "name": "Timber Pillbox",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Timber defensive position. No distinct current Sortie card.",
+      "images": [
+        {
+          "src": "images/eff632e0e5fdfb93.webp",
+          "caption": "Bunker family reference · not an exact Timber Pillbox card",
+          "width": 1000,
+          "height": 475
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-airfield-objective",
+      "name": "Airfield Objective",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Map airfield/objective role. A possible objective/location design decision, not a claimed purchasable unit card.",
+      "images": [],
+      "defined": false
+    },
+    {
+      "id": "candidate-belgian-gate",
+      "name": "Belgian Gate",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Beach obstacle reference. No distinct card or approved obstacle rules.",
+      "images": [],
+      "defined": false
+    },
+    {
+      "id": "candidate-czech-hedgehog",
+      "name": "Czech Hedgehog",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Anti-vehicle obstacle reference. No distinct card or approved obstacle rules.",
+      "images": [],
+      "defined": false
+    },
+    {
+      "id": "candidate-dragon-teeth-row",
+      "name": "Dragon Teeth Row",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Anti-vehicle obstacle row reference. No distinct card or approved obstacle rules.",
+      "images": [],
+      "defined": false
+    },
+    {
+      "id": "candidate-timber-beach-ramp",
+      "name": "Timber Beach Ramp",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP",
+        "US"
+      ],
+      "description": "Beach obstacle/ramp reference. No distinct card or approved obstacle rules.",
+      "images": [],
+      "defined": false
+    },
+    {
+      "id": "candidate-p-38l-combat-recon",
+      "name": "P-38L Combat Recon",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "US"
+      ],
+      "description": "U.S. P-38L single-aircraft Combat Recon. The naval game charges 450 for one aircraft; this is not a proposed Sortie cost. No distinct P-38L card.",
+      "images": [
+        {
+          "src": "images/0440a9585e65ae8e.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 688
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-ki-45-combat-recon",
+      "name": "Ki-45 Combat Recon",
+      "section": "Undefined roles / inclusion decisions",
+      "factions": [
+        "JP"
+      ],
+      "description": "Japanese Ki-45 single-aircraft Combat Recon. The naval game charges 450 for one aircraft; this is not a proposed Sortie cost. No distinct Ki-45 card.",
+      "images": [
+        {
+          "src": "images/ee5cafce4b44f0c0.webp",
+          "caption": "Ki-45 model reference",
+          "width": 1000,
+          "height": 687
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-super-battleship",
+      "name": "Super battleship",
+      "section": "Additional integrated / special-role inclusion decisions",
+      "factions": [
+        "US",
+        "JP"
+      ],
+      "description": "Campaign-access U.S./Japanese super-battleship hulls. Existing Battleship cards remain unchanged; decide whether the campaign hulls need distinct cards.",
+      "images": [
+        {
+          "src": "images/c36719a0f0957878.webp",
+          "caption": "U.S. model reference · not a Sortie face",
+          "width": 1000,
+          "height": 650
+        },
+        {
+          "src": "images/8fc4f17e482b6eca.webp",
+          "caption": "Japanese model reference · not a Sortie face",
+          "width": 1000,
+          "height": 650
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-supply-aircraft",
+      "name": "Supply aircraft",
+      "section": "Additional integrated / special-role inclusion decisions",
+      "factions": [
+        "US",
+        "JP"
+      ],
+      "description": "Integrated supply call-in uses C60/Ki56 presentation and one finite delivery. No distinct Sortie supply-aircraft card; naval purchase prices are not card costs.",
+      "images": [
+        {
+          "src": "images/b8aa4ede849cc0e7.webp",
+          "caption": "Combined aircraft/transport model reference · not a Sortie face",
+          "width": 1000,
+          "height": 529
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-amphibious-supply-truck",
+      "name": "Amphibious supply truck",
+      "section": "Additional integrated / special-role inclusion decisions",
+      "factions": [
+        "US",
+        "JP"
+      ],
+      "description": "Integrated finite-stock land supply vehicle; services eligible recipients and can be recovered as cargo. No distinct Sortie card.",
+      "images": [
+        {
+          "src": "images/d89d7d8fe0f0953f.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 667
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-troop-truck",
+      "name": "Troop truck",
+      "section": "Additional integrated / special-role inclusion decisions",
+      "factions": [
+        "US",
+        "JP"
+      ],
+      "description": "Current troop truck carries eight passengers; physical deployment and recovery preserve the actual units. No distinct Sortie card.",
+      "images": [
+        {
+          "src": "images/9152b29be1212658.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 667
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-commando",
+      "name": "Commando",
+      "section": "Additional integrated / special-role inclusion decisions",
+      "factions": [
+        "Availability undecided"
+      ],
+      "description": "Additional inclusion decision: existing commando unit/art reference. This row does not assert normal recruitment or deck availability.",
+      "images": [
+        {
+          "src": "images/baf9c21b8d5ee059.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 688
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-guard-dog",
+      "name": "Guard dog",
+      "section": "Additional integrated / special-role inclusion decisions",
+      "factions": [
+        "Availability undecided"
+      ],
+      "description": "Additional inclusion decision: existing guard-dog model. No card rules, deck allegiance or standard recruitment are asserted.",
+      "images": [
+        {
+          "src": "images/01c839afac62769a.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 688
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-prisoners-prisoner-camp",
+      "name": "Prisoners / prisoner camp",
+      "section": "Additional integrated / special-role inclusion decisions",
+      "factions": [
+        "Availability undecided"
+      ],
+      "description": "Additional inclusion decision: prisoner/camp scenario reference. Not a claim that prisoners are purchasable combat units.",
+      "images": [
+        {
+          "src": "images/01f212fa79acf076.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 722
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "candidate-rubber-duck",
+      "name": "Rubber duck",
+      "section": "Additional integrated / special-role inclusion decisions",
+      "factions": [
+        "Deck inclusion undecided"
+      ],
+      "description": "Integrated special arrival/control unit. No defined Sortie card; achievement/debug behavior in the naval game is separate from card design.",
+      "images": [
+        {
+          "src": "images/5a07c80a4b2621d1.webp",
+          "caption": "Model reference · not an approved Sortie face",
+          "width": 1000,
+          "height": 727
+        }
+      ],
+      "defined": false
+    },
+    {
+      "id": "ability-us-frigate",
+      "name": "US Frigate",
+      "section": "Existing playable cards · optional special-ability design",
+      "factions": [
+        "US"
+      ],
+      "description": "Already defined and playable with base combat and no special ability by design. Current cost: F (F Fuel, A Ammo, R Resources); Fire 1, Hull 2. Optional ability decision only; preserve existing rules unless approved.",
+      "images": [
+        {
+          "src": "images/d90ba3a00038cd93.webp",
+          "caption": "US collectible reference · not approved Sortie rules",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": true,
+      "existingCardID": "us-frigate"
+    },
+    {
+      "id": "ability-us-destroyer",
+      "name": "US Destroyer",
+      "section": "Existing playable cards · optional special-ability design",
+      "factions": [
+        "US"
+      ],
+      "description": "Already defined and playable with base combat and no special ability by design. Current cost: FA (F Fuel, A Ammo, R Resources); Fire 2, Hull 3. Optional ability decision only; preserve existing rules unless approved.",
+      "images": [
+        {
+          "src": "images/93bc4723cdd3d829.webp",
+          "caption": "US collectible reference · not approved Sortie rules",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": true,
+      "existingCardID": "us-destroyer"
+    },
+    {
+      "id": "ability-us-cruiser",
+      "name": "US Cruiser",
+      "section": "Existing playable cards · optional special-ability design",
+      "factions": [
+        "US"
+      ],
+      "description": "Already defined and playable with base combat and no special ability by design. Current cost: FAR (F Fuel, A Ammo, R Resources); Fire 2, Hull 4. Optional ability decision only; preserve existing rules unless approved.",
+      "images": [
+        {
+          "src": "images/bb6fe7bd8b8d7fc0.webp",
+          "caption": "US collectible reference · not approved Sortie rules",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": true,
+      "existingCardID": "us-cruiser"
+    },
+    {
+      "id": "ability-us-battleship",
+      "name": "US Battleship",
+      "section": "Existing playable cards · optional special-ability design",
+      "factions": [
+        "US"
+      ],
+      "description": "Already defined and playable with base combat and no special ability by design. Current cost: FFAAR (F Fuel, A Ammo, R Resources); Fire 4, Hull 6. Optional ability decision only; preserve existing rules unless approved.",
+      "images": [
+        {
+          "src": "images/d268b942a0db65d2.webp",
+          "caption": "US collectible reference · not approved Sortie rules",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": true,
+      "existingCardID": "us-battleship"
+    },
+    {
+      "id": "ability-jp-frigate",
+      "name": "JP Frigate",
+      "section": "Existing playable cards · optional special-ability design",
+      "factions": [
+        "JP"
+      ],
+      "description": "Already defined and playable with base combat and no special ability by design. Current cost: F (F Fuel, A Ammo, R Resources); Fire 1, Hull 2. Optional ability decision only; preserve existing rules unless approved.",
+      "images": [
+        {
+          "src": "images/719347704e2e768a.webp",
+          "caption": "JP collectible reference · not approved Sortie rules",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": true,
+      "existingCardID": "jp-frigate"
+    },
+    {
+      "id": "ability-jp-cruiser",
+      "name": "JP Cruiser",
+      "section": "Existing playable cards · optional special-ability design",
+      "factions": [
+        "JP"
+      ],
+      "description": "Already defined and playable with base combat and no special ability by design. Current cost: FAR (F Fuel, A Ammo, R Resources); Fire 3, Hull 3. Optional ability decision only; preserve existing rules unless approved.",
+      "images": [
+        {
+          "src": "images/ff4cb19ebee72fd7.webp",
+          "caption": "JP collectible reference · not approved Sortie rules",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": true,
+      "existingCardID": "jp-cruiser"
+    },
+    {
+      "id": "ability-jp-battleship",
+      "name": "JP Battleship",
+      "section": "Existing playable cards · optional special-ability design",
+      "factions": [
+        "JP"
+      ],
+      "description": "Already defined and playable with base combat and no special ability by design. Current cost: FFAAR (F Fuel, A Ammo, R Resources); Fire 5, Hull 5. Optional ability decision only; preserve existing rules unless approved.",
+      "images": [
+        {
+          "src": "images/2516a9e5b0f67ea1.webp",
+          "caption": "JP collectible reference · not approved Sortie rules",
+          "width": 1000,
+          "height": 563
+        }
+      ],
+      "defined": true,
+      "existingCardID": "jp-battleship"
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+[
+  {
+    "file": "c4c66272239f9131.webp",
+    "source_file": "Light-Transport-Perspective.png",
+    "source_sha256": "5d23dd77b55930537279d48f36db676e1393610285697cdda289f201a6290ce7",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "0ab14d701aa46374.webp",
+    "source_file": "Q408FleetBadges.png",
+    "source_sha256": "d332d8909fe208b4e627ee14744053bb3c089d61c816b484aa178451e8c218ff",
+    "label": "US existing badge reference \u00b7 native size",
+    "crop": [
+      202,
+      210,
+      298,
+      306
+    ]
+  },
+  {
+    "file": "c49384d72cd009a9.webp",
+    "source_file": "Q408FleetBadges.png",
+    "source_sha256": "d332d8909fe208b4e627ee14744053bb3c089d61c816b484aa178451e8c218ff",
+    "label": "JP existing badge reference \u00b7 native size",
+    "crop": [
+      302,
+      210,
+      398,
+      306
+    ]
+  },
+  {
+    "file": "b8aa4ede849cc0e7.webp",
+    "source_file": "Light-Transports-And-C47-Top.png",
+    "source_sha256": "b47a6722345c19f077ad52b4d037e5acb7117a2835b2cdba69589fbe4f848e08",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "c93c8d29c5d0f42e.webp",
+    "source_file": "Side.png",
+    "source_sha256": "c6b9e60d05adedf2eacda11e6d9faa6ded40eb233720885b02774b21356a149c",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "0440a9585e65ae8e.webp",
+    "source_file": "Q451-ThreeQuarter.png",
+    "source_sha256": "56bfa4169c00cb091132466ede75452c526fd0080bee783ab2baa2745b8eb83e",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "ee8d1a4a39d9189b.webp",
+    "source_file": "US_Battlecruiser.jpg",
+    "source_sha256": "5213cc145bfdab7cba995d9552585e018e8dca97421a5681d874e2793a8faf2b",
+    "label": "US collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "eb2d761da33df1f8.webp",
+    "source_file": "JP_Battlecruiser.jpg",
+    "source_sha256": "9465f358f3828347791602d7aadd9f4a569b4579f60f7cb951e1111bab276ea3",
+    "label": "JP collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "25f6ca30ba3b73c5.webp",
+    "source_file": "Q408FleetBadges.png",
+    "source_sha256": "d332d8909fe208b4e627ee14744053bb3c089d61c816b484aa178451e8c218ff",
+    "label": "US existing badge reference \u00b7 native size",
+    "crop": [
+      202,
+      314,
+      298,
+      410
+    ]
+  },
+  {
+    "file": "efada190d44d831c.webp",
+    "source_file": "Q408FleetBadges.png",
+    "source_sha256": "d332d8909fe208b4e627ee14744053bb3c089d61c816b484aa178451e8c218ff",
+    "label": "JP existing badge reference \u00b7 native size",
+    "crop": [
+      302,
+      314,
+      398,
+      410
+    ]
+  },
+  {
+    "file": "482531bcce551ca8.webp",
+    "source_file": "Q408FleetBadges.png",
+    "source_sha256": "d332d8909fe208b4e627ee14744053bb3c089d61c816b484aa178451e8c218ff",
+    "label": "US existing badge reference \u00b7 native size",
+    "crop": [
+      302,
+      366,
+      398,
+      462
+    ]
+  },
+  {
+    "file": "1adbb284431af7c2.webp",
+    "source_file": "Q408FleetBadges.png",
+    "source_sha256": "d332d8909fe208b4e627ee14744053bb3c089d61c816b484aa178451e8c218ff",
+    "label": "JP existing badge reference \u00b7 native size",
+    "crop": [
+      402,
+      366,
+      498,
+      462
+    ]
+  },
+  {
+    "file": "c36719a0f0957878.webp",
+    "source_file": "US-V14-Perspective.png",
+    "source_sha256": "1b45c50890af3f654ade0108899e2902b28dc8f7adf4c4791a7b08fc14737972",
+    "label": "U.S. model reference \u00b7 not a Sortie face",
+    "crop": null
+  },
+  {
+    "file": "8fc4f17e482b6eca.webp",
+    "source_file": "JP-V13-Perspective.png",
+    "source_sha256": "31ba7d476f033a39202fbdc0a06a1e74918e98908b21215662ac3fb4995df61f",
+    "label": "Japanese model reference \u00b7 not a Sortie face",
+    "crop": null
+  },
+  {
+    "file": "b8aa4ede849cc0e7.webp",
+    "source_file": "Light-Transports-And-C47-Top.png",
+    "source_sha256": "b47a6722345c19f077ad52b4d037e5acb7117a2835b2cdba69589fbe4f848e08",
+    "label": "Combined aircraft/transport model reference \u00b7 not a Sortie face",
+    "crop": null
+  },
+  {
+    "file": "d89d7d8fe0f0953f.webp",
+    "source_file": "Truck-Empty-And-Supply-Perspective.png",
+    "source_sha256": "69171e00f097aba329b3c15ab97c395a06b58f7ca505517a34d53f6728509f86",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "9152b29be1212658.webp",
+    "source_file": "Truck-Revision-With-Infantry.png",
+    "source_sha256": "9b7ecdd907adf3382ce34b87dcbcd9a0e5faba2d22e78975709968edef87e58f",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "baf9c21b8d5ee059.webp",
+    "source_file": "Compare.png",
+    "source_sha256": "4ed70a9c7a5be91d92d3971fdde5bae62cd02d74e5e01274f6ff520aa2ef614b",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "01c839afac62769a.webp",
+    "source_file": "Hero.png",
+    "source_sha256": "dd7bcca80bd8144173be364617632457ff1b5765688290c533d8ea048cbce67a",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "01f212fa79acf076.webp",
+    "source_file": "Compound-v3.png",
+    "source_sha256": "f2eea59f14bcb87593e40056585f5c4e2c7ed3fb62866e3dedc374573e131aad",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "5a07c80a4b2621d1.webp",
+    "source_file": "ThreeQuarter.png",
+    "source_sha256": "fb42ac893aa11eaf7529d23bc4b57deafd5e8a9f96372ae81c6808fe5a7e2077",
+    "label": "Model reference \u00b7 not an approved Sortie face",
+    "crop": null
+  },
+  {
+    "file": "d90ba3a00038cd93.webp",
+    "source_file": "US_Frigate.jpg",
+    "source_sha256": "4e832cd1475dd2d461b25dcb0d167fe6482047871c95306b99fc802bea4b1a8e",
+    "label": "US collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "719347704e2e768a.webp",
+    "source_file": "JP_Frigate.jpg",
+    "source_sha256": "10da39e1a4e42f983b42420f790e5077e86ef171bc885bcf622ac20c3b48d113",
+    "label": "JP collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "93bc4723cdd3d829.webp",
+    "source_file": "US_Destroyer.jpg",
+    "source_sha256": "9e6255522fab831967556244ca4cf0174bf4375df3584f031f84f252936f4ece",
+    "label": "US collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "77cfacb94b66fd36.webp",
+    "source_file": "JP_Destroyer.jpg",
+    "source_sha256": "d68aa8d1df48923ba5ef9d4a34b92a8913ec0937239eb680aaaa077fe4319929",
+    "label": "JP collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "bb6fe7bd8b8d7fc0.webp",
+    "source_file": "US_Cruiser.jpg",
+    "source_sha256": "65abdff069183e8c0cf1b41c7640a93575678bbc06c9ef27b1157e7fe11cbdaf",
+    "label": "US collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "ff4cb19ebee72fd7.webp",
+    "source_file": "JP_Cruiser.jpg",
+    "source_sha256": "d2cd863bf3c641dd3550c440413debc426eecb5eeb1f7d7e76965dde027454f9",
+    "label": "JP collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "d268b942a0db65d2.webp",
+    "source_file": "US_Battleship.jpg",
+    "source_sha256": "d16ef1cafffe78a78b6fd8b5fbca9544d39c56589014c95a73dc9fe59a408cec",
+    "label": "US collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "2516a9e5b0f67ea1.webp",
+    "source_file": "JP_Battleship.jpg",
+    "source_sha256": "8334d021f33b7e3940937e14bffd29d13c03c0ab1b5c3a7f64e6cdeb5ea8b574",
+    "label": "JP collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "d90ba3a00038cd93.webp",
+    "source_file": "US_Frigate.jpg",
+    "source_sha256": "4e832cd1475dd2d461b25dcb0d167fe6482047871c95306b99fc802bea4b1a8e",
+    "label": "US collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "719347704e2e768a.webp",
+    "source_file": "JP_Frigate.jpg",
+    "source_sha256": "10da39e1a4e42f983b42420f790e5077e86ef171bc885bcf622ac20c3b48d113",
+    "label": "JP collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "bb6fe7bd8b8d7fc0.webp",
+    "source_file": "US_Cruiser.jpg",
+    "source_sha256": "65abdff069183e8c0cf1b41c7640a93575678bbc06c9ef27b1157e7fe11cbdaf",
+    "label": "US collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "ff4cb19ebee72fd7.webp",
+    "source_file": "JP_Cruiser.jpg",
+    "source_sha256": "d2cd863bf3c641dd3550c440413debc426eecb5eeb1f7d7e76965dde027454f9",
+    "label": "JP collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "d268b942a0db65d2.webp",
+    "source_file": "US_Battleship.jpg",
+    "source_sha256": "d16ef1cafffe78a78b6fd8b5fbca9544d39c56589014c95a73dc9fe59a408cec",
+    "label": "US collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "2516a9e5b0f67ea1.webp",
+    "source_file": "JP_Battleship.jpg",
+    "source_sha256": "8334d021f33b7e3940937e14bffd29d13c03c0ab1b5c3a7f64e6cdeb5ea8b574",
+    "label": "JP collectible reference \u00b7 not approved Sortie rules",
+    "crop": null
+  },
+  {
+    "file": "50f9f500a9c2888a.webp",
+    "source_file": "Hero.png",
+    "source_sha256": "5ad08a1f8e4dd02f9a403f07fc79ed5ba84ea0075189a504b5c73babe5f873ad",
+    "label": "U.S. scout model reference",
+    "crop": null
+  },
+  {
+    "file": "27ddf5b4dd3a0411.webp",
+    "source_file": "Hero.png",
+    "source_sha256": "d63ed9ba4b4c50de8454133a748163b8534404dcb96fd9f38da28de4df8b30b6",
+    "label": "Japanese recon model reference",
+    "crop": null
+  },
+  {
+    "file": "99971c0c91472010.webp",
+    "source_file": "Aircraft_US.png",
+    "source_sha256": "04dc34900773022d0073e559214223d50a9a450b1118ce0c3cbd55d2f6c1adac",
+    "label": "Aircraft family reference \u00b7 not an exact floatplane card",
+    "crop": null
+  },
+  {
+    "file": "b7eaf2e0155e2aea.webp",
+    "source_file": "jp-torpedo-run-1400.png",
+    "source_sha256": "84d5af1c837edb067bcaae92435d6b3bde1086a8726b81ba8749cacee8eb0973",
+    "label": "Existing Torpedo Run order artwork \u00b7 reference for aircraft role, not its card",
+    "crop": null
+  },
+  {
+    "file": "3f3eb013580a7db0.webp",
+    "source_file": "Aircraft_JP.png",
+    "source_sha256": "c48a3d1286dd490ab746a98cb8d9dda893099bae822ead78926be09135a07de7",
+    "label": "Japanese aircraft family reference \u00b7 not an approved Kamikaze face",
+    "crop": null
+  },
+  {
+    "file": "10e02701ed56dc82.webp",
+    "source_file": "UK_LVT_A1.png",
+    "source_sha256": "7a3fde698742db882216640136e373cfbee692c18c22e987bbbb43915dee0fa0",
+    "label": "Existing UK LVT(A)-1 unit reference",
+    "crop": null
+  },
+  {
+    "file": "50bbe24bc438dfc6.webp",
+    "source_file": "Shared_FieldGun.png",
+    "source_sha256": "f973aa8004d9ad9aef93972ac3df83d17ea0dc7fa286b351d643008670ae0b8a",
+    "label": "Existing Field Gun unit reference",
+    "crop": null
+  },
+  {
+    "file": "0338590e103eab3e.webp",
+    "source_file": "Hero.png",
+    "source_sha256": "89b82fb4a9db1478a216ef74b2fbbc99834f2bdffea9c2439626369430339827",
+    "label": "Curved MG nest model reference",
+    "crop": null
+  },
+  {
+    "file": "eff632e0e5fdfb93.webp",
+    "source_file": "BunkerVariants.png",
+    "source_sha256": "77a559a18b8243cd6fcda5cce95b47f915f78dfcbdcc64e5905195820f7a8651",
+    "label": "Bunker family reference \u00b7 not an exact Beach MG Bunker card",
+    "crop": null
+  },
+  {
+    "file": "eff632e0e5fdfb93.webp",
+    "source_file": "BunkerVariants.png",
+    "source_sha256": "77a559a18b8243cd6fcda5cce95b47f915f78dfcbdcc64e5905195820f7a8651",
+    "label": "Bunker family reference \u00b7 not an exact Gun Bunker card",
+    "crop": null
+  },
+  {
+    "file": "eff632e0e5fdfb93.webp",
+    "source_file": "BunkerVariants.png",
+    "source_sha256": "77a559a18b8243cd6fcda5cce95b47f915f78dfcbdcc64e5905195820f7a8651",
+    "label": "Bunker family reference \u00b7 not an exact Concrete Pillbox card",
+    "crop": null
+  },
+  {
+    "file": "eff632e0e5fdfb93.webp",
+    "source_file": "BunkerVariants.png",
+    "source_sha256": "77a559a18b8243cd6fcda5cce95b47f915f78dfcbdcc64e5905195820f7a8651",
+    "label": "Bunker family reference \u00b7 not an exact Timber Pillbox card",
+    "crop": null
+  },
+  {
+    "file": "ee5cafce4b44f0c0.webp",
+    "source_file": "Port.png",
+    "source_sha256": "fada0ea2f7062759748a287e7012ff60d0befd6b961b5592ede876248b52e2a7",
+    "label": "Ki-45 model reference",
+    "crop": null
+  }
+]
